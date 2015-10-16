@@ -1,1 +1,1 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;CACC","file":"bundle.css","sourcesContent":["body {\n}\n"],"sourceRoot":"/source/"}
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA;CACC,qCAAqC;CACrC;;AAED;CACC,qBAAqB;CACrB;;AAED;CACC,kBAAkB;CAClB","file":"bundle.css","sourcesContent":["body {\n\tfont-family: 'Open Sans', sans-serif;\n}\n\n.feature {\n\tpadding-bottom: 20px;\n}\n\n.title {\n\tfont-weight: bold;\n}\n"],"sourceRoot":"/source/"}
