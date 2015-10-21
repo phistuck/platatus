@@ -1,13 +1,172 @@
+:root { /* minor third ratio */ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/
+
+  /* not rem so you can use .small in .small */
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  margin-top: 0;
+}
+h1, .h1 {
+  font-size: 33px;
+  font-size: 2.0736rem;
+  line-height: 50px;
+  line-height: 3.125rem;
+  padding-top: 6px;
+  padding-top: 0.40625rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.15625rem;
+}
+h2, .h2 {
+  font-size: 27px;
+  font-size: 1.728rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  padding-top: 6px;
+  padding-top: 0.40625rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.15625rem;
+}
+h3, .h3 {
+  font-size: 23px;
+  font-size: 1.44rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  padding-top: 6px;
+  padding-top: 0.40625rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.15625rem;
+}
+h4, .h4 {
+  font-size: 19px;
+  font-size: 1.2rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  padding-top: 6px;
+  padding-top: 0.40625rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.15625rem;
+}
+h5, .h5 {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  padding-top: 6px;
+  padding-top: 0.40625rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.15625rem;
+}
+h6, .h6 {
+  font-size: 13px;
+  font-size: 0.83333rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+  padding-top: 6px;
+  padding-top: 0.40625rem;
+  margin-bottom: 18px;
+  margin-bottom: 1.15625rem;
+}
+
+/* since h5 & h6 always small, it's interesting to have a difference with classic text */
+
+h5, .h5 h6, .h6 {
+  text-decoration: underline
+}
+
+body {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 25px;
+  line-height: 1.5625rem;
+}
+
+* {
+	box-sizing: border-box;
+}
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+#main {
+	max-width: 1280px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Open Sans Light', sans-serif;
+  font-weight: normal;
+}
+
+#features {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .feature {
-	padding-bottom: 20px;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 25px;
+	padding-bottom: 1.5625rem;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
-.title {
-	font-weight: bold;
+.feature-meta {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+
+.feature-summary {
+	margin: 0;
+}
+
+.feature-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.feature-links li {
+	margin-right: 16px;
+	margin-right: 1rem;
+}
+
+.feature-statuses ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.feature-statuses ul li {
+
 }
 
 /*# sourceMappingURL=bundle.css.map */

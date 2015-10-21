@@ -6,71 +6,108 @@
   <link rel="stylesheet" href="./bundle.css">
 </head>
 <body>
-  <h1>Platatus!</h1>
-  <div id="features">
-      <div class="feature">
-        <div class="title">Fetch API</div>
-        <div class="details">
-          <div class="summary">
+  <div id="main">
+    <header>
+      <h1>Platatus!</h1>
+    </header>
+    <article>
+      <ul id="features">
+          <li class="feature">
+            <div class="feature-meta">
+              <h2 class="feature-title">Fetch API</h2>
+              <p class="feature-summary">
 The Fetch specification defines requests, responses, and the process that binds them; fetching.
-</div>
-            <div class="documentation"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">documentation</a></div>
-            <div class="spec"><a target="_blank" href="https://fetch.spec.whatwg.org/">spec</a></div>
-          <div class="statuses">
-            Chrome: shipped,
-            Webkit: none,
-            IE: none
-          </div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="title">Service Worker</div>
-        <div class="details">
-          <div class="summary">
-A method for browsers to run JavaScript in the background to handle network requests and manage cached responses. Service Workers offers a replacement for Application Cache.
-</div>
-            <div class="documentation"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">documentation</a></div>
-            <div class="spec"><a target="_blank" href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">spec</a></div>
-            <div class="bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1059784">bugzilla</a></div>
-          <div class="statuses">
-            Chrome: shipped,
-            Webkit: none,
-            IE: under consideration
-          </div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="title">Streams API</div>
-        <div class="details">
-          <div class="summary">
-The Fetch specification defines requests, responses, and the process that binds them; fetching.
-</div>
-            <div class="spec"><a target="_blank" href="https://w3c.github.io/streams-api/">spec</a></div>
-            <div class="bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=891286">bugzilla</a></div>
-          <div class="statuses">
-            Chrome: in development,
-            Webkit: none,
-            IE: none
-          </div>
-        </div>
-      </div>
-      <div class="feature">
-        <div class="title">WebGL 2.0</div>
-        <div class="details">
-          <div class="summary">
+</p>
+              <div class="feature-links">
+                <ul>
+                  <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">documentation</a></li>
+                  <li class="feature-link-spec"><a target="_blank" href="https://fetch.spec.whatwg.org/">spec</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature-statuses">
+              <ul>
+                <li>FF <span>in development</span></li>
+                <li>CH <span>shipped</span></li>
+                <li>SA <span>none</span></li>
+                <li>IE <span>none</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="feature-meta">
+              <h2 class="feature-title">Service Worker</h2>
+              <p class="feature-summary">
+A method for browsers to run JavaScript in the background to handle network requests and manage cached responses.
+</p>
+              <div class="feature-links">
+                <ul>
+                  <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">documentation</a></li>
+                  <li class="feature-link-spec"><a target="_blank" href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">spec</a></li>
+                  <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1059784">bugzilla</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature-statuses">
+              <ul>
+                <li>FF <span>in development</span></li>
+                <li>CH <span>shipped</span></li>
+                <li>SA <span>none</span></li>
+                <li>IE <span>under-consideration</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="feature-meta">
+              <h2 class="feature-title">Streams API</h2>
+              <p class="feature-summary">
+Representing and handling a stream of data in JavaScript.
+</p>
+              <div class="feature-links">
+                <ul>
+                  <li class="feature-link-spec"><a target="_blank" href="https://w3c.github.io/streams-api/">spec</a></li>
+                  <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=891286">bugzilla</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature-statuses">
+              <ul>
+                <li>FF <span>in development</span></li>
+                <li>CH <span>in-development</span></li>
+                <li>SA <span>none</span></li>
+                <li>IE <span>none</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="feature">
+            <div class="feature-meta">
+              <h2 class="feature-title">WebGL 2.0</h2>
+              <p class="feature-summary">
 An update to WebGL, based on OpenGL ES 3.0
-</div>
-            <div class="documentation"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">documentation</a></div>
-            <div class="spec"><a target="_blank" href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">spec</a></div>
-          <div class="statuses">
-            Chrome: in development,
-            Webkit: none,
-            IE: none
-          </div>
-        </div>
-      </div>
+</p>
+              <div class="feature-links">
+                <ul>
+                  <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">documentation</a></li>
+                  <li class="feature-link-spec"><a target="_blank" href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">spec</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="feature-statuses">
+              <ul>
+                <li>FF <span>in development</span></li>
+                <li>CH <span>in-development</span></li>
+                <li>SA <span>none</span></li>
+                <li>IE <span>none</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+      </ul>
+    </article>
   </div>
-
   <script src="./bundle.js"></script>
 </body>
 </html>
