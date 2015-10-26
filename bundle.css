@@ -1,82 +1,184 @@
-:root { /* minor third ratio */ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/
-
-  /* not rem so you can use .small in .small */
-}
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  margin-top: 0;
-}
-h1, .h1 {
-  font-size: 33px;
-  font-size: 2.0736rem;
-  line-height: 50px;
-  line-height: 3.125rem;
-  padding-top: 6px;
-  padding-top: 0.40625rem;
-  margin-bottom: 18px;
-  margin-bottom: 1.15625rem;
-}
-h2, .h2 {
-  font-size: 27px;
-  font-size: 1.728rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
-  padding-top: 6px;
-  padding-top: 0.40625rem;
-  margin-bottom: 18px;
-  margin-bottom: 1.15625rem;
-}
-h3, .h3 {
-  font-size: 23px;
-  font-size: 1.44rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
-  padding-top: 6px;
-  padding-top: 0.40625rem;
-  margin-bottom: 18px;
-  margin-bottom: 1.15625rem;
-}
-h4, .h4 {
-  font-size: 19px;
-  font-size: 1.2rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
-  padding-top: 6px;
-  padding-top: 0.40625rem;
-  margin-bottom: 18px;
-  margin-bottom: 1.15625rem;
-}
-h5, .h5 {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
-  padding-top: 6px;
-  padding-top: 0.40625rem;
-  margin-bottom: 18px;
-  margin-bottom: 1.15625rem;
-}
-h6, .h6 {
-  font-size: 13px;
-  font-size: 0.83333rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
-  padding-top: 6px;
-  padding-top: 0.40625rem;
-  margin-bottom: 18px;
-  margin-bottom: 1.15625rem;
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
-/* since h5 & h6 always small, it's interesting to have a difference with classic text */
-
-h5, .h5 h6, .h6 {
-  text-decoration: underline
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-LightItalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* new mozID visual style */
 
 body {
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 25px;
-  line-height: 1.5625rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  /*font-family: $baseFontFamily;*/
+  font-weight: 300;
+}
+
+/* Button shadows */
+
+/* Gutter width remains the same for all grids */
+
+/* Default grid: 12 columns at 60px */
+
+/* Tablet grid: 12 columns at 40px */
+
+/* Mobile grid: 5 columns at 40px */
+
+/* Mobile landscape grid: 7 columns at 40px */
+
+/* Breakpoints for common devices */
+
+/* Page widths for common breakpoints */
+
+/* Desktop: */
+/*           (12cols ✕ 60px) =  720 */
+/* +     (11 gutters ✕ 20px) =  220 */
+/* + (2 page gutters ✕ 30px) =   60 */
+/* -------------------------------- */
+/*                           = 1000px */
+
+/* Tablet: */
+/*           (12cols ✕ 40px) =  480 */
+/* +     (11 gutters ✕ 20px) =  220 */
+/* + (2 page gutters ✕ 30px) =   60 */
+/* -------------------------------- */
+/*                           =  760px */
+
+/* Phone (landscape): */
+/*            (7cols ✕ 40px) =  280 */
+/* +      (6 gutters ✕ 20px) =  120 */
+/* + (2 page gutters ✕ 20px) =   40 */
+/* -------------------------------- */
+/*                           =  440px */
+
+/* Phone (portrait): */
+/*            (5cols ✕ 40px) =  200 */
+/* +      (4 gutters ✕ 20px) =   80 */
+/* + (2 page gutters ✕ 20px) =   40 */
+/* -------------------------------- */
+/*                           =  320px */
+
+/* default: 1.5625, sandstone: 14px/20px = 1.42857 */ /* minor third ratio */
+
+/* not rem so you can use .small in .small */
+
+body {
+	font-size: 14px;
+	font-size: 0.875rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+} /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/ /* depend on fontSize*/
+
+h1 {
+  font-size: 29px;
+  font-size: 1.8144rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  padding-top: 4px;
+  padding-top: 0.29688rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.95312rem;
+  margin-top: 0;
+}
+h2 {
+  font-size: 24px;
+  font-size: 1.512rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  padding-top: 4px;
+  padding-top: 0.29688rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.95312rem;
+  margin-top: 0;
+}
+h3 {
+  font-size: 20px;
+  font-size: 1.26rem;
+  line-height: 20px;
+  line-height: 1.25rem;
+  padding-top: 4px;
+  padding-top: 0.29688rem;
+  margin-bottom: 15px;
+  margin-bottom: 0.95312rem;
+  margin-top: 0;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-LightItalic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-Italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
 }
 
 * {
@@ -88,7 +190,6 @@ html, body {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -97,15 +198,35 @@ body {
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+
+	background: #1e1e21;
+	color: #fff;
+}
+
+h1, h2, h3, h4 {
+	letter-spacing: -.035em;
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+
+a {
+  color: rgb(47,138,202);
+  text-decoration: none;
+}
+
+a:hover,
+  a:focus,
+  a:active {
+  color: lighten(rgb(47,138,202), 10%);
+  text-decoration: underline;
 }
 
 #main {
 	max-width: 1280px;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Open Sans Light', sans-serif;
-  font-weight: normal;
 }
 
 #features {
@@ -117,8 +238,8 @@ h1, h2, h3, h4 {
 .feature {
 	margin: 0;
 	padding: 0;
-	padding-bottom: 25px;
-	padding-bottom: 1.5625rem;
+	padding-bottom: 20px;
+	padding-bottom: 1.25rem;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -156,8 +277,8 @@ h1, h2, h3, h4 {
 	        flex-direction: row;
 }
 .feature-links li {
-	margin-right: 16px;
-	margin-right: 1rem;
+	margin-right: 14px;
+	margin-right: 0.875rem;
 }
 
 .feature-statuses ul {
