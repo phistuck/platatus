@@ -1,5 +1,5 @@
 {
-  "created": "2015-10-30T22:23:47.126Z",
+  "created": "2015-10-30T23:11:42.769Z",
   "features": [
     {
       "summary": "\nThe Fetch specification defines requests, responses, and the process that binds them; fetching.\n",
@@ -17,10 +17,10 @@
       "bugzilla_status": "RESOLVED",
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/6730533392351232",
-      "webkit_status": "none",
+      "webkit_status": "unknown",
       "ie_status": "under-consideration",
       "ie_url": "https://dev.modern.ie/platform/status/fetchapi",
-      "standardization": "editors-draft"
+      "spec_status": "editors-draft"
     },
     {
       "summary": "\nThe Promise object is used for deferred and asynchronous computations.\n",
@@ -44,7 +44,7 @@
       "webkit_url": "https://www.webkit.org/status.html#feature-Promise Objects",
       "ie_status": "shipped",
       "ie_url": "https://dev.modern.ie/platform/status/promiseses6",
-      "standardization": "established-standard"
+      "spec_status": "established-standard"
     },
     {
       "summary": "\nGives web applications the ability to receive messages pushed to them from a server even when the site is not focussed or even open in the user-agent.\n",
@@ -61,10 +61,10 @@
       "bugzilla_status": "RESOLVED",
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/5416033485586432",
-      "webkit_status": "none",
+      "webkit_status": "unknown",
       "ie_status": "under-consideration",
       "ie_url": "https://dev.modern.ie/platform/status/pushapi",
-      "standardization": "working-draft-or-equivalent"
+      "spec_status": "working-draft-or-equivalent"
     },
     {
       "summary": "\nEvent-driven scripts that can handle network requests and manage cached responses in the background.\n",
@@ -86,7 +86,7 @@
       "webkit_url": "https://www.webkit.org/status.html#specification-Service Workers",
       "ie_status": "under-consideration",
       "ie_url": "https://dev.modern.ie/platform/status/serviceworker",
-      "standardization": "working-draft-or-equivalent"
+      "spec_status": "working-draft-or-equivalent"
     },
     {
       "summary": "\nRepresenting and handling a stream of data in JavaScript.\n",
@@ -108,7 +108,7 @@
       "webkit_url": "https://www.webkit.org/status.html#specification-Streams",
       "ie_status": "shipped",
       "ie_url": "https://dev.modern.ie/platform/status/streamsapi",
-      "standardization": "working-draft-or-equivalent"
+      "spec_status": "working-draft-or-equivalent"
     },
     {
       "summary": "\nAn update to WebGL, based on OpenGL ES 3.0.\n",
@@ -130,7 +130,7 @@
       "webkit_url": "https://www.webkit.org/status.html#specification-WebGL 2",
       "ie_status": "under-consideration",
       "ie_url": "https://dev.modern.ie/platform/status/webgl20",
-      "standardization": "editors-draft"
+      "spec_status": "editors-draft"
     }
   ],
   "firefoxVersions": {

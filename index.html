@@ -5,175 +5,194 @@
   <meta charset="utf-8">
   <title>Platatus!</title>
   <link rel="stylesheet" href="./bundle.css">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="images/ios-icon-180.png">
-    <link rel="icon" type="image/png" sizes="196x196" href="images/favicon-196.png">
-    <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="images/ios-icon-180.png">
+  <link rel="icon" type="image/png" sizes="196x196" href="images/favicon-196.png">
+  <link rel="shortcut icon" href="images/favicon.ico">
 </head>
 <body>
-  <div id="main">
-    <header>
-      <h1>Platatus!</h1>
+  <div class="row">
+    <header class="row-inner">
+      <h1>Firefox</h1>
+      <h2>Platform Status</h2>
     </header>
-    <article>
-      <ul id="features">
-          <li class="feature">
-            <div class="feature-meta">
-              <h2 class="feature-title">Fetch API</h2>
-              <p class="feature-summary">
+  </div>
+  <article class="row">
+    <ul class="row-inner" id="features">
+        <li class="feature">
+          <div class="feature-meta">
+            <h3 class="feature-title">Fetch API</h3>
+            <p class="feature-summary">
 The Fetch specification defines requests, responses, and the process that binds them; fetching.
 </p>
-              <div class="feature-links">
-                <ul>
-                  <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">documentation</a></li>
-                  <li class="feature-link-spec"><a target="_blank" href="https://fetch.spec.whatwg.org/">spec</a> (editors-draft)</li>
-                  <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1039846">bug (RESOLVED)</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="feature-statuses">
+            <div class="feature-links">
               <ul>
-                <li>FF <span>shipped</span></li>
-                <li>  <a target="_blank" href="https://www.chromestatus.com/feature/6730533392351232">CH <span>shipped</span></a>
-</li>
-                <li>  SA <span>none</span>
-</li>
-                <li>  <a target="_blank" href="https://dev.modern.ie/platform/status/fetchapi">IE <span>under-consideration</span></a>
-</li>
+                <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Docs</a></li>
+                <li class="feature-link-spec"><a target="_blank" href="https://fetch.spec.whatwg.org/">
+                  Editor draft
+                </a></li>
+                <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1039846">RESOLVED</a></li>
               </ul>
             </div>
-          </li>
-          <li class="feature">
-            <div class="feature-meta">
-              <h2 class="feature-title">Promises</h2>
-              <p class="feature-summary">
+          </div>
+          <div class="feature-status">
+            <ul>
+                <li class="status state-chrome state-shipped" title="Google Chrome - Shipped">
+                <a target="_blank" href="https://www.chromestatus.com/feature/6730533392351232"> <span>Shipped</span></a>
+                <li class="status state-webkit state-unknown" title="Apple Safari - No public signals">
+                 <span>?</span>
+                <li class="status state-edge state-under-consideration" title="Microsoft Edge - Under Consideration">
+                <a target="_blank" href="https://dev.modern.ie/platform/status/fetchapi"> <span>Considering</span></a>
+                <li class="status state-firefox state-shipped" title="Mozilla Firefox - Shipped">
+                 <span>Shipped</span>
+            </ul>
+          </div>
+        </li>
+        <li class="feature">
+          <div class="feature-meta">
+            <h3 class="feature-title">Promises</h3>
+            <p class="feature-summary">
 The Promise object is used for deferred and asynchronous computations.
 </p>
-              <div class="feature-links">
-                <ul>
-                  <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">documentation</a></li>
-                  <li class="feature-link-spec"><a target="_blank" href="http://www.ecma-international.org/ecma-262/6.0/#sec-promise-constructor">spec</a> (established-standard)</li>
-                  <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=856410">bug (RESOLVED)</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="feature-statuses">
+            <div class="feature-links">
               <ul>
-                <li>FF <span>shipped</span></li>
-                <li>  <a target="_blank" href="https://www.chromestatus.com/feature/5681726336532480">CH <span>shipped</span></a>
-</li>
-                <li>  <a target="_blank" href="https://www.webkit.org/status.html#feature-Promise Objects">SA <span>shipped</span></a>
-</li>
-                <li>  <a target="_blank" href="https://dev.modern.ie/platform/status/promiseses6">IE <span>shipped</span></a>
-</li>
+                <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">Docs</a></li>
+                <li class="feature-link-spec"><a target="_blank" href="http://www.ecma-international.org/ecma-262/6.0/#sec-promise-constructor">
+                  Standard
+                </a></li>
+                <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=856410">RESOLVED</a></li>
               </ul>
             </div>
-          </li>
-          <li class="feature">
-            <div class="feature-meta">
-              <h2 class="feature-title">Push API</h2>
-              <p class="feature-summary">
+          </div>
+          <div class="feature-status">
+            <ul>
+                <li class="status state-chrome state-shipped" title="Google Chrome - Shipped">
+                <a target="_blank" href="https://www.chromestatus.com/feature/5681726336532480"> <span>Shipped</span></a>
+                <li class="status state-webkit state-shipped" title="Apple Safari - Shipped">
+                <a target="_blank" href="https://www.webkit.org/status.html#feature-Promise Objects"> <span>Shipped</span></a>
+                <li class="status state-edge state-shipped" title="Microsoft Edge - Shipped">
+                <a target="_blank" href="https://dev.modern.ie/platform/status/promiseses6"> <span>Shipped</span></a>
+                <li class="status state-firefox state-shipped" title="Mozilla Firefox - Shipped">
+                 <span>Shipped</span>
+            </ul>
+          </div>
+        </li>
+        <li class="feature">
+          <div class="feature-meta">
+            <h3 class="feature-title">Push API</h3>
+            <p class="feature-summary">
 Gives web applications the ability to receive messages pushed to them from a server even when the site is not focussed or even open in the user-agent.
 </p>
-              <div class="feature-links">
-                <ul>
-                  <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API">documentation</a></li>
-                  <li class="feature-link-spec"><a target="_blank" href="https://w3c.github.io/push-api/">spec</a> (working-draft-or-equivalent)</li>
-                  <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1038811">bug (RESOLVED)</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="feature-statuses">
+            <div class="feature-links">
               <ul>
-                <li>FF <span>in-development</span></li>
-                <li>  <a target="_blank" href="https://www.chromestatus.com/feature/5416033485586432">CH <span>shipped</span></a>
-</li>
-                <li>  SA <span>none</span>
-</li>
-                <li>  <a target="_blank" href="https://dev.modern.ie/platform/status/pushapi">IE <span>under-consideration</span></a>
-</li>
+                <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Push_API">Docs</a></li>
+                <li class="feature-link-spec"><a target="_blank" href="https://w3c.github.io/push-api/">
+                  Working draft
+                </a></li>
+                <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1038811">RESOLVED</a></li>
               </ul>
             </div>
-          </li>
-          <li class="feature">
-            <div class="feature-meta">
-              <h2 class="feature-title">Service Worker</h2>
-              <p class="feature-summary">
+          </div>
+          <div class="feature-status">
+            <ul>
+                <li class="status state-chrome state-shipped" title="Google Chrome - Shipped">
+                <a target="_blank" href="https://www.chromestatus.com/feature/5416033485586432"> <span>Shipped</span></a>
+                <li class="status state-webkit state-unknown" title="Apple Safari - No public signals">
+                 <span>?</span>
+                <li class="status state-edge state-under-consideration" title="Microsoft Edge - Under Consideration">
+                <a target="_blank" href="https://dev.modern.ie/platform/status/pushapi"> <span>Considering</span></a>
+                <li class="status state-firefox state-in-development" title="Mozilla Firefox - In Development">
+                 <span>Developing</span>
+            </ul>
+          </div>
+        </li>
+        <li class="feature">
+          <div class="feature-meta">
+            <h3 class="feature-title">Service Worker</h3>
+            <p class="feature-summary">
 Event-driven scripts that can handle network requests and manage cached responses in the background.
 </p>
-              <div class="feature-links">
-                <ul>
-                  <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">documentation</a></li>
-                  <li class="feature-link-spec"><a target="_blank" href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">spec</a> (working-draft-or-equivalent)</li>
-                  <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1059784">bug (NEW)</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="feature-statuses">
+            <div class="feature-links">
               <ul>
-                <li>FF <span>in-development</span></li>
-                <li>  <a target="_blank" href="https://www.chromestatus.com/feature/6561526227927040">CH <span>shipped</span></a>
-</li>
-                <li>  <a target="_blank" href="https://www.webkit.org/status.html#specification-Service Workers">SA <span>not-planned</span></a>
-</li>
-                <li>  <a target="_blank" href="https://dev.modern.ie/platform/status/serviceworker">IE <span>under-consideration</span></a>
-</li>
+                <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API">Docs</a></li>
+                <li class="feature-link-spec"><a target="_blank" href="http://slightlyoff.github.io/ServiceWorker/spec/service_worker/">
+                  Working draft
+                </a></li>
+                <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1059784">NEW</a></li>
               </ul>
             </div>
-          </li>
-          <li class="feature">
-            <div class="feature-meta">
-              <h2 class="feature-title">Streams API</h2>
-              <p class="feature-summary">
+          </div>
+          <div class="feature-status">
+            <ul>
+                <li class="status state-chrome state-shipped" title="Google Chrome - Shipped">
+                <a target="_blank" href="https://www.chromestatus.com/feature/6561526227927040"> <span>Shipped</span></a>
+                <li class="status state-webkit state-not-planned" title="Apple Safari - Not currently planned">
+                <a target="_blank" href="https://www.webkit.org/status.html#specification-Service Workers"> <span>Not planned</span></a>
+                <li class="status state-edge state-under-consideration" title="Microsoft Edge - Under Consideration">
+                <a target="_blank" href="https://dev.modern.ie/platform/status/serviceworker"> <span>Considering</span></a>
+                <li class="status state-firefox state-in-development" title="Mozilla Firefox - In Development">
+                 <span>Developing</span>
+            </ul>
+          </div>
+        </li>
+        <li class="feature">
+          <div class="feature-meta">
+            <h3 class="feature-title">Streams API</h3>
+            <p class="feature-summary">
 Representing and handling a stream of data in JavaScript.
 </p>
-              <div class="feature-links">
-                <ul>
-                  <li class="feature-link-spec"><a target="_blank" href="https://streams.spec.whatwg.org/">spec</a> (working-draft-or-equivalent)</li>
-                  <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1128959">bug (ASSIGNED)</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="feature-statuses">
+            <div class="feature-links">
               <ul>
-                <li>FF <span>in-development</span></li>
-                <li>  <a target="_blank" href="https://www.chromestatus.com/feature/6605041225957376">CH <span>in-development</span></a>
-</li>
-                <li>  <a target="_blank" href="https://www.webkit.org/status.html#specification-Streams">SA <span>unknown</span></a>
-</li>
-                <li>  <a target="_blank" href="https://dev.modern.ie/platform/status/streamsapi">IE <span>shipped</span></a>
-</li>
+                <li class="feature-link-spec"><a target="_blank" href="https://streams.spec.whatwg.org/">
+                  Working draft
+                </a></li>
+                <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=1128959">ASSIGNED</a></li>
               </ul>
             </div>
-          </li>
-          <li class="feature">
-            <div class="feature-meta">
-              <h2 class="feature-title">WebGL 2.0</h2>
-              <p class="feature-summary">
+          </div>
+          <div class="feature-status">
+            <ul>
+                <li class="status state-chrome state-in-development" title="Google Chrome - In Development">
+                <a target="_blank" href="https://www.chromestatus.com/feature/6605041225957376"> <span>Developing</span></a>
+                <li class="status state-webkit state-unknown" title="Apple Safari - No public signals">
+                <a target="_blank" href="https://www.webkit.org/status.html#specification-Streams"> <span>?</span></a>
+                <li class="status state-edge state-shipped" title="Microsoft Edge - Shipped">
+                <a target="_blank" href="https://dev.modern.ie/platform/status/streamsapi"> <span>Shipped</span></a>
+                <li class="status state-firefox state-in-development" title="Mozilla Firefox - In Development">
+                 <span>Developing</span>
+            </ul>
+          </div>
+        </li>
+        <li class="feature">
+          <div class="feature-meta">
+            <h3 class="feature-title">WebGL 2.0</h3>
+            <p class="feature-summary">
 An update to WebGL, based on OpenGL ES 3.0.
 </p>
-              <div class="feature-links">
-                <ul>
-                  <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">documentation</a></li>
-                  <li class="feature-link-spec"><a target="_blank" href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">spec</a> (editors-draft)</li>
-                  <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=889977">bug (NEW)</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="feature-statuses">
+            <div class="feature-links">
               <ul>
-                <li>FF <span>in-development</span></li>
-                <li>  <a target="_blank" href="https://www.chromestatus.com/feature/6694359164518400">CH <span>in-development</span></a>
-</li>
-                <li>  <a target="_blank" href="https://www.webkit.org/status.html#specification-WebGL 2">SA <span>in-development</span></a>
-</li>
-                <li>  <a target="_blank" href="https://dev.modern.ie/platform/status/webgl20">IE <span>under-consideration</span></a>
-</li>
+                <li class="feature-link-mdn"><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API">Docs</a></li>
+                <li class="feature-link-spec"><a target="_blank" href="https://www.khronos.org/registry/webgl/specs/latest/2.0/">
+                  Editor draft
+                </a></li>
+                <li class="feature-link-bugzilla"><a target="_blank" href="https://bugzilla.mozilla.org/show_bug.cgi?id=889977">NEW</a></li>
               </ul>
             </div>
-          </li>
-      </ul>
-    </article>
-  </div>
+          </div>
+          <div class="feature-status">
+            <ul>
+                <li class="status state-chrome state-in-development" title="Google Chrome - In Development">
+                <a target="_blank" href="https://www.chromestatus.com/feature/6694359164518400"> <span>Developing</span></a>
+                <li class="status state-webkit state-in-development" title="Apple Safari - In Development">
+                <a target="_blank" href="https://www.webkit.org/status.html#specification-WebGL 2"> <span>Developing</span></a>
+                <li class="status state-edge state-under-consideration" title="Microsoft Edge - Under Consideration">
+                <a target="_blank" href="https://dev.modern.ie/platform/status/webgl20"> <span>Considering</span></a>
+                <li class="status state-firefox state-in-development" title="Mozilla Firefox - In Development">
+                 <span>Developing</span>
+            </ul>
+          </div>
+        </li>
+    </ul>
+  </article>
   <script src="./bundle.js"></script>
 </body>
 </html>

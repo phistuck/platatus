@@ -46,7 +46,8 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h2,
+h3 {
   /*font-family: $baseFontFamily;*/
   font-weight: 300;
 }
@@ -117,7 +118,7 @@ h1 {
   margin-bottom: 0.95312rem;
   margin-top: 0;
 }
-h2 {
+h3 {
   font-size: 24px;
   font-size: 1.512rem;
   line-height: 20px;
@@ -128,9 +129,9 @@ h2 {
   margin-bottom: 0.95312rem;
   margin-top: 0;
 }
-h3 {
-  font-size: 20px;
-  font-size: 1.26rem;
+h2 {
+  font-size: 16px;
+  font-size: 1.05rem;
   line-height: 20px;
   line-height: 1.25rem;
   padding-top: 4px;
@@ -190,27 +191,7 @@ html, body {
 }
 
 body {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-
 	background: #1e1e21;
-	color: #fff;
-}
-
-h1, h2, h3, h4 {
-	letter-spacing: -.035em;
-}
-h1 {
-}
-h2 {
-}
-h3 {
 }
 
 a {
@@ -225,8 +206,42 @@ a:hover,
   text-decoration: underline;
 }
 
-#main {
-	max-width: 1280px;
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 14px 20px;
+	padding: 0.875rem 1.25rem;
+}
+.row-inner {
+	width: 1280px;
+}
+
+h1 {
+	padding-top: 0;
+	margin-bottom: 0;
+	letter-spacing: -.035em;
+	color: #fff;
+}
+h2 {
+	padding-top: 0;
+	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
+	color: #bbb;
+	font-style: italic;
+}
+
+article {
+	background-color: #fff;
+	color: #333;
+}
+
+h3 {
 }
 
 #features {
@@ -260,9 +275,20 @@ a:hover,
 
 .feature-summary {
 	margin: 0;
+	color: #a2b4c7;
 }
 
 .feature-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.feature-links li {
+	display: inline-block;
+	margin-right: 14px;
+	margin-right: 0.875rem;
+}
+.feature-status ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -275,19 +301,55 @@ a:hover,
 	-webkit-flex-direction: row;
 	    -ms-flex-direction: row;
 	        flex-direction: row;
+	height: 40px;
 }
-.feature-links li {
-	margin-right: 14px;
-	margin-right: 0.875rem;
-}
-
-.feature-statuses ul {
+.status {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	width: 19px;
+	text-indent: -9999px;
+	background-position: 9px 8px;
+	background-repeat: no-repeat;
+	/*box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);*/
+	margin-right: 1px;
+	background-size: 16px;
 }
-.feature-statuses ul li {
-
+.status.state-firefox {
+	width: 40px;
+	margin-right: 0;
+	background-size: 32px;
+	background-position: 20px 5px;
+}
+.status.state-chrome {
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_32x32.png);
+}
+.status.state-firefox {
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/firefox/firefox_64x64.png);
+}
+.status.state-edge {
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/edge/edge_32x32.png);
+}
+.status.state-webkit {
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/safari/safari_32x32.png);
+}
+.status.state-unknown {
+	background-color: #bbb;
+}
+.status.state-not-planned {
+	background-color: #D0021B;
+}
+.status.state-deprecated {
+	background-color: #D0021B;
+}
+.status.state-under-consideration {
+	background-color: #F8E71C;
+}
+.status.state-in-development {
+	background-color: #B8E986;
+}
+.status.state-shipped {
+	background-color: #7ED321;
 }
 
 /*# sourceMappingURL=bundle.css.map */
