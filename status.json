@@ -1,5 +1,5 @@
 {
-  "created": "2015-10-30T21:32:41.828Z",
+  "created": "2015-10-30T22:17:13.797Z",
   "features": [
     {
       "summary": "\nThe Fetch specification defines requests, responses, and the process that binds them; fetching.\n",
@@ -78,7 +78,7 @@
       "bugzilla_status": "NEW",
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/6561526227927040",
-      "webkit_status": "none",
+      "webkit_status": "not-planned",
       "webkit_url": "https://www.webkit.org/status.html#specification-Service Workers",
       "ie_status": "under-consideration",
       "ie_url": "https://dev.modern.ie/platform/status/serviceworker",
