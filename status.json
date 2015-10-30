@@ -1,5 +1,5 @@
 {
-  "created": "2015-10-28T21:45:43.660Z",
+  "created": "2015-10-30T21:32:41.828Z",
   "features": [
     {
       "summary": "\nThe Fetch specification defines requests, responses, and the process that binds them; fetching.\n",
@@ -95,7 +95,7 @@
       "spec_url": "https://w3c.github.io/streams-api/",
       "spec_repo": "https://github.com/whatwg/streams",
       "chrome_ref": 6605041225957376,
-      "bugzilla_status": "NEW",
+      "bugzilla_status": "RESOLVED",
       "chrome_status": "in-development",
       "chrome_url": "https://www.chromestatus.com/feature/6605041225957376",
       "webkit_status": "none",
