@@ -1,6 +1,27 @@
 {
-  "created": "2015-10-30T23:11:42.769Z",
+  "created": "2015-11-02T17:09:40.742Z",
   "features": [
+    {
+      "summary": "\nThe App Manifest specification defines metadata for use by user agents.\n",
+      "slug": "app-manifest",
+      "file": "app-manifest.md",
+      "title": "Web Application Manifest",
+      "category": "apps",
+      "bugzilla": 997779,
+      "firefox_status": "in-development",
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/Manifest",
+      "spec_url": "https://w3c.github.io/manifest/",
+      "spec_repo": "https://github.com/w3c/manifest",
+      "chrome_ref": 6488656873259008,
+      "ie_ref": "Web Application Manifest",
+      "bugzilla_status": "NEW",
+      "chrome_status": "shipped",
+      "chrome_url": "https://www.chromestatus.com/feature/6488656873259008",
+      "webkit_status": "unknown",
+      "ie_status": "under-consideration",
+      "ie_url": "https://dev.modern.ie/platform/status/webapplicationmanifest",
+      "spec_status": "working-draft-or-equivalent"
+    },
     {
       "summary": "\nThe Fetch specification defines requests, responses, and the process that binds them; fetching.\n",
       "slug": "fetch",
