@@ -1,41 +1,41 @@
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Light-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Semibold-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-LightItalic-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Bold-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Italic-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
@@ -140,44 +140,51 @@ h2 {
   margin-bottom: 0.95312rem;
   margin-top: 0;
 }
+.feature-title,
+.status-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Light-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Light-webfont.woff') format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Semibold-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Semibold-webfont.woff') format('woff');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-LightItalic-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.woff') format('woff');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Regular-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Regular-webfont.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Bold-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('./fonts/OpenSans-Italic-webfont.woff') format('woff');
+  src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: italic;
 }
@@ -190,6 +197,37 @@ html, body {
 	padding: 0;
 }
 
+#tabzilla {
+  float: right;
+  position: relative;
+}
+#tabzilla a {
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: url('../media/img/tabzilla-static.png');
+  background-repeat: no-repeat;
+  display: block;
+  height: 37px;
+  position: relative;
+  width: 147px;
+  z-index: 2;
+}
+#tabzilla:before {
+  background-color: transparent;
+  content: '';
+  display: block;
+  height: 26px;
+  left: 28px;
+  position: absolute;
+  top: 0;
+  width: 88px;
+  z-index: 1;
+}
+html[dir='rtl'] #tabzilla {
+  float: left;
+}
+
 body {
 	background: #1e1e21;
 }
@@ -199,9 +237,7 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-  a:focus,
-  a:active {
+a:hover, a:focus, a:active {
   color: lighten(rgb(47,138,202), 10%);
   text-decoration: underline;
 }
@@ -215,18 +251,24 @@ a:hover,
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	padding: 14px 20px;
-	padding: 0.875rem 1.25rem;
+	padding: 0 14px;
+	padding: 0 0.875rem;
 }
 .row-inner {
-	width: 1280px;
+	width: 1000px;
+}
+header {
+	padding: 0 0 10px 0;
+	padding: 0 0 0.625rem 0;
 }
 
 h1 {
-	padding-top: 0;
+	padding-top: 20px;
+	padding-top: 1.25rem;
 	margin-bottom: 0;
 	letter-spacing: -.035em;
 	color: #fff;
+	font-weight: 600;
 }
 h2 {
 	padding-top: 0;
@@ -242,19 +284,28 @@ article {
 }
 
 h3 {
+	padding-top: 12px;
+	padding-top: 0.775rem;
+	margin-bottom: 7px;
+	margin-bottom: 0.475rem;
 }
 
 #features {
 	list-style: none;
-	margin: 0;
+	margin: 20px 0;
+	margin: 1.25rem 0;
 	padding: 0;
 }
 
 .feature {
 	margin: 0;
 	padding: 0;
-	padding-bottom: 20px;
-	padding-bottom: 1.25rem;
+	padding-bottom: 1px;
+}
+.feature:focus {
+	outline: none;
+}
+.feature-header {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -265,19 +316,34 @@ h3 {
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 }
-
-.feature-meta {
+.feature-title {
 	-webkit-box-flex: 1;
 	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
 }
 
-.feature-summary {
-	margin: 0;
-	color: #a2b4c7;
+.feature-meta {
+	padding-bottom: 13px;
+	padding-bottom: 0.83333rem;
+	display: none;
+	padding: 10px 0;
+	padding: 0.625rem 0;
 }
-
+.feature-summary {
+	color: #666;
+	margin: 0;
+	padding-bottom: 10px;
+	padding-bottom: 0.625rem;
+	/*@media (min-width: $breakTablet) {
+		flex: 1;
+	}*/
+}
+.feature-links {
+	/*@media (min-width: $breakTablet) {
+		width: calc($gutterY * 18);
+	}*/
+}
 .feature-links ul {
 	list-style: none;
 	margin: 0;
@@ -285,9 +351,32 @@ h3 {
 }
 .feature-links li {
 	display: inline-block;
-	margin-right: 14px;
-	margin-right: 0.875rem;
+	margin-right: 7px;
+	margin-right: 0.4375rem;
 }
+.icon {
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 20px;
+	width: 1.25rem;
+	height: 14px;
+	height: 0.875rem;
+	background-size: 0.875rem;
+}
+.icon-spec {
+	background-image: url(images/html5.png);
+}
+.icon-mdn {
+	background-image: url(images/mdn.png);
+}
+.icon-bugzilla {
+	background-image: url(images/bugzilla.png);
+}
+.icon-samples {
+	background-image: url(images/github.png);
+}
+
 .feature-status ul {
 	list-style: none;
 	margin: 0;
@@ -302,54 +391,163 @@ h3 {
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	height: 40px;
+	height: 2.5rem;
 }
 .status {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	width: 19px;
-	text-indent: -9999px;
-	background-position: 9px 8px;
+	width: 14px;
+	width: 0.875rem;
+	background-position: 50% calc(1.25rem * 2 - 9px);
 	background-repeat: no-repeat;
 	/*box-shadow: -1px 0 1px rgba(0, 0, 0, 0.2);*/
 	margin-right: 1px;
 	background-size: 16px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: stretch;
+	-webkit-justify-content: stretch;
+	    -ms-flex-pack: stretch;
+	        justify-content: stretch;
+	-webkit-box-align: stretch;
+	-webkit-align-items: stretch;
+	    -ms-flex-align: stretch;
+	        align-items: stretch;
+}
+.status-inner {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.status-inner:hover, .status-inner:focus, .status-inner:active {
+  text-decoration: none;
+}
+.status-text {
+	color: #fff;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	font-size: 0.72917em;
+	display: none;
+}
+.status-version {
+	color: #fff;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+	font-weight: 600;
 }
 .status.state-firefox {
 	width: 40px;
 	margin-right: 0;
 	background-size: 32px;
-	background-position: 20px 5px;
+	background-position: 50% 50%;
+}
+.status.state-firefox .status-text {
+	font-size: inherit;
+	font-weight: 600;
 }
 .status.state-chrome {
-	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_32x32.png);
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_64x64.png);
 }
 .status.state-firefox {
-	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/firefox/firefox_64x64.png);
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/firefox/firefox_128x128.png);
 }
 .status.state-edge {
-	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/edge/edge_32x32.png);
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/edge/edge_64x64.png);
 }
 .status.state-webkit {
-	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/safari/safari_32x32.png);
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/safari/safari_64x64.png);
 }
+
 .status.state-unknown {
 	background-color: #bbb;
 }
 .status.state-not-planned {
-	background-color: #D0021B;
+	background-color: #cf4033;
 }
 .status.state-deprecated {
-	background-color: #D0021B;
+	background-color: #cf4033;
 }
 .status.state-under-consideration {
-	background-color: #F8E71C;
+	background-color: #cf9733;
 }
 .status.state-in-development {
-	background-color: #B8E986;
+	background-color: #c5cc32;
 }
 .status.state-shipped {
-	background-color: #7ED321;
+	background-color: #81bc2e;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+
+  #tabzilla a {
+    background-image: url('../media/img/tabzilla-static-high-res.png');
+    background-size: 147px 37px;
+  }
+}
+@media (min-width: 480px) {
+
+  .feature-meta {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+
+  .feature:focus .feature-meta {
+    display: block;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+
+  .icon-spec {
+    background-image: url(images/html5@2x.png);
+  }
+
+  .icon-mdn {
+    background-image: url(images/mdn@2x.png);
+  }
+
+  .icon-bugzilla {
+    background-image: url(images/bugzilla@2x.png);
+  }
+
+  .icon-samples {
+    background-image: url(images/github@2x.png);
+  }
+}
+@media (min-width: 760px) {
+
+  .status {
+    width: 79px;
+    background-size: 32px;
+    background-position: 50% 1.54512rem;
+  }
+
+  .status-inner {
+    height: 61.8%;
+  }
+
+  .status-text {
+    display: block;
+  }
+
+  .status.state-firefox {
+    background-size: 48px;
+    width: 120px;
+    background-position: 50% 1.10762rem;
+  }
 }
 
 /*# sourceMappingURL=bundle.css.map */

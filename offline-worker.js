@@ -27,7 +27,7 @@
 
 
 /* eslint-disable quotes, comma-spacing */
-var PrecacheConfig = [["bundle.css","2821fc5ba1437f17209ff029c676be8b"],["bundle.js","7d576b15c8b376a2bb80ad1cccf60a2a"],["index.html","efa0bb0c660154612836f0d1333fa4f0"]];
+var PrecacheConfig = [["bundle.css","84b1cbbbef38b688e9f24ebaebaa9e35"],["bundle.js","7d576b15c8b376a2bb80ad1cccf60a2a"],["index.html","59941d3d89ce08691e7f642b63929e78"]];
 /* eslint-enable quotes, comma-spacing */
 var CacheNamePrefix = 'sw-precache-v1-mozilla/platatus-' + (self.registration ? self.registration.scope : '') + '-';
 
