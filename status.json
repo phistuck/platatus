@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-03T06:07:59.680Z",
+  "created": "2015-11-03T20:07:29.364Z",
   "features": [
     {
       "summary": "\nThe App Manifest specification defines metadata for use by user agents.\n",
@@ -161,9 +161,9 @@
     }
   ],
   "firefoxVersions": {
-    "stable": 41,
+    "stable": 42,
     "beta": 42,
-    "aurora": 43,
-    "nightly": 44
+    "aurora": 44,
+    "nightly": 45
   }
 }

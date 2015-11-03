@@ -229,6 +229,11 @@ html[dir='rtl'] #tabzilla {
 
 body {
 	background: #1e1e21;
+	background-image: -webkit-radial-gradient(ellipse farthest-side at top left, #00549e 0, #000 100%);
+	background-image: radial-gradient(ellipse farthest-side at top left, #00549e 0, #000 100%);
+	background-size: 100% 500px;
+	background-repeat: no-repeat;
+	background-position: top center;
 }
 
 a {
@@ -303,6 +308,7 @@ h3 {
 	padding-bottom: 1px;
 }
 .feature:focus {
+	outline: 1px solid #bbb;
 }
 .feature-header {
 	display: -webkit-box;
