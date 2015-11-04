@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-04T22:15:24.091Z",
+  "created": "2015-11-04T22:58:16.897Z",
   "features": [
     {
       "summary": "\nThe App Manifest specification defines metadata for use by user agents.\n",
@@ -136,6 +136,29 @@
       "ie_status": "shipped",
       "ie_url": "https://dev.modern.ie/platform/status/streamsapi",
       "spec_status": "working-draft-or-equivalent"
+    },
+    {
+      "summary": "\nAn API closely conforming to OpenGL ES 2.0 for rendering 3D and 2D graphics in a HTML5 &lt;canvas&gt; element.\n",
+      "slug": "webgl_1",
+      "file": "webgl_1.md",
+      "title": "WebGL 1.0",
+      "category": "graphics, games",
+      "firefox_status": "shipped",
+      "bugzilla": 596720,
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API",
+      "spec_url": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
+      "chrome_ref": 6049512976023552,
+      "webkit_ref": "WebGL 1",
+      "ie_ref": "WebGL  (Canvas 3D)",
+      "bugzilla_status": "RESOLVED",
+      "firefox_version": 4,
+      "chrome_status": "shipped",
+      "chrome_url": "https://www.chromestatus.com/feature/6049512976023552",
+      "webkit_status": "shipped",
+      "webkit_url": "https://www.webkit.org/status.html#specification-WebGL 1",
+      "ie_status": "shipped",
+      "ie_url": "https://dev.modern.ie/platform/status/webglcanvas3d",
+      "spec_status": "established-standard"
     },
     {
       "summary": "\nAn update to WebGL, based on OpenGL ES 3.0.\n",
