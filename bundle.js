@@ -1,19 +1,2 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
-
-(function () {
-  if (location.hostname !== 'localhost' && location.protocol !== 'https:') {
-    location.href = location.href.replace(/^http/, 'https');
-    return;
-  }
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('offline-worker.js').then(function (registration) {
-      console.log('offline worker registered');;
-    });
-  }
-})();
-
-},{}]},{},[1])
-
-
+!function r(e,o,t){function n(f,c){if(!o[f]){if(!e[f]){var u="function"==typeof require&&require;if(!c&&u)return u(f,!0);if(i)return i(f,!0);var a=new Error("Cannot find module '"+f+"'");throw a.code="MODULE_NOT_FOUND",a}var l=o[f]={exports:{}};e[f][0].call(l.exports,function(r){var o=e[f][1][r];return n(o?o:r)},l,l.exports,r,e,o,t)}return o[f].exports}for(var i="function"==typeof require&&require,f=0;f<t.length;f++)n(t[f]);return n}({1:[function(r,e,o){"use strict";!function(){return"localhost"!==location.hostname&&"https:"!==location.protocol?void(location.href=location.href.replace(/^http/,"https")):void("serviceWorker"in navigator&&navigator.serviceWorker.register("offline-worker.js").then(function(r){console.log("offline worker registered")}))}()},{}]},{},[1]);
 //# sourceMappingURL=bundle.js.map
