@@ -1,14 +1,6 @@
+/*$buttonGreenDark: darken($buttonGreen, 10%);*/
+
 /* new mozID visual style */
-
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-
-h2,
-h3 {
-  /*font-family: $baseFontFamily;*/
-  font-weight: 300;
-}
 
 /* Button shadows */
 
@@ -76,20 +68,9 @@ h1 {
   margin-bottom: 0.95312rem;
   margin-top: 0;
 }
-h3 {
-  font-size: 24px;
-  font-size: 1.512rem;
-  line-height: 20px;
-  line-height: 1.25rem;
-  padding-top: 4px;
-  padding-top: 0.29688rem;
-  margin-bottom: 15px;
-  margin-bottom: 0.95312rem;
-  margin-top: 0;
-}
-h2 {
-  font-size: 16px;
-  font-size: 1.05rem;
+.feature-title {
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
   line-height: 1.25rem;
   padding-top: 4px;
@@ -162,7 +143,7 @@ html, body {
   text-indent: 120%;
   white-space: nowrap;
   overflow: hidden;
-  background-image: url('../media/img/tabzilla-static.png');
+  background-image: url('images/tabzilla-static.png');
   background-repeat: no-repeat;
   display: block;
   height: 37px;
@@ -186,6 +167,7 @@ html[dir='rtl'] #tabzilla {
 }
 
 body {
+	font-family: 'Open Sans', sans-serif;
 	background: #1e1e21;
 	background-image: -webkit-radial-gradient(ellipse farthest-side at top left, #00549e 0, #000 100%);
 	background-image: radial-gradient(ellipse farthest-side at top left, #00549e 0, #000 100%);
@@ -200,8 +182,8 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: rgb(0,150,221);
-  text-decoration: underline;
+	color: rgb(0,150,221);
+	text-decoration: underline;
 }
 
 .row {
@@ -233,9 +215,12 @@ h1 {
 	font-weight: 600;
 }
 h2 {
+	font-weight: 300;
+	font-size: 16px;
+	font-size: 1.05rem;
 	padding-top: 0;
-	margin-bottom: 20px;
-	margin-bottom: 1.25rem;
+	margin: 0 0 20px 0;
+	margin: 0 0 1.25rem 0;
 	color: #bbb;
 	font-style: italic;
 }
@@ -243,13 +228,6 @@ h2 {
 article {
 	background-color: #fff;
 	color: #333;
-}
-
-h3 {
-	padding-top: 0;
-	margin-bottom: 0;
-	line-height: 40px;
-	line-height: 2.5rem;
 }
 
 #features {
@@ -265,7 +243,7 @@ h3 {
 	padding-left: 14px;
 	padding-left: 0.875rem;
 }
-.feature:focus {
+.feature:hover, .feature:focus {
 	outline: none;
 	background-color: #f6f4ec;
 }
@@ -286,6 +264,12 @@ h3 {
 	-webkit-flex: 1;
 	    -ms-flex: 1;
 	        flex: 1;
+	padding-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	line-height: 2.5rem;
+	padding-right: 14px;
+	padding-right: 0.875rem;
 }
 
 .feature-meta {
@@ -299,23 +283,23 @@ h3 {
 	margin: 0;
 	padding-bottom: 10px;
 	padding-bottom: 0.625rem;
-	color: #b1b1ad;
+	color: #666;
 }
 .feature-links ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 .feature-links li {
-  display: inline-block;
-  margin-right: 7px;
-  margin-right: 0.4375rem;
+	display: inline-block;
+	margin-right: 7px;
+	margin-right: 0.4375rem;
 }
 .feature-links a {
-  color: #b1b1ad;
+	color: #b1b1ad;
 }
 .feature-links a:hover, .feature-links a:focus, .feature-links a:active {
-  color: rgb(0,150,221);
+	color: rgb(0,150,221);
 }
 .icon {
 	display: inline-block;
@@ -360,13 +344,6 @@ h3 {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	width: 28px;
-	width: 1.75rem;
-	background-position: 50% 28px;
-	background-position: 50% 1.75rem;
-	background-repeat: no-repeat;
-	background-size: 24px;
-	border-top: 1px solid rgba(0, 0, 0, 0);
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -379,12 +356,34 @@ h3 {
 	-webkit-align-items: stretch;
 	    -ms-flex-align: stretch;
 	        align-items: stretch;
+	width: 20px;
+	width: 1.25rem;
+	background-position: 50% calc(1.25rem + 1px);
+	background-repeat: no-repeat;
+	background-size: 16px;
+	color: #484848;
+	font-weight: 700;
+	font-size: 0.72917em;
+	text-transform: uppercase;
+	border: 1px solid rgba(0, 0, 0, 0);
 }
-.status:not(:first-child) {
-	border-left: 1px solid rgba(0, 0, 0, 0);
+/*&:first-child {
+		border-left: none;
+	}
+	&:last-child {
+		border-right: none;
+	}*/
+.status.state-chrome {
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_64x64.png);
 }
-.status:not(:last-child) {
-	border-right: 1px solid rgba(0, 0, 0, 0);
+.status.state-firefox {
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/firefox/firefox_128x128.png);
+}
+.status.state-edge {
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/edge/edge_64x64.png);
+}
+.status.state-webkit {
+	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/safari/safari_64x64.png);
 }
 .status-inner {
 	-webkit-box-flex: 1;
@@ -403,142 +402,167 @@ h3 {
 	-webkit-align-items: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	color: inherit;
 	height: 61.8%;
 }
 .status-inner:hover, .status-inner:focus, .status-inner:active {
-  text-decoration: none;
-}
-.status.state-firefox {
-	width: 42px;
-	width: 2.625rem;
-	margin-right: 0;
-	background-size: 32px;
-	background-position: 50% 28px;
-	background-position: 50% 1.78571rem;
-}
-.status.state-firefox .status-text {
-	font-size: inherit;
-	font-weight: 600;
-}
-.status.state-chrome {
-	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_64x64.png);
-}
-.status.state-firefox {
-	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/firefox/firefox_128x128.png);
-}
-.status.state-edge {
-	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/edge/edge_64x64.png);
-}
-.status.state-webkit {
-	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/safari/safari_64x64.png);
+	text-decoration: none;
 }
 
 /* Color wheel for #81bc2e */
+/*$stateUnknown: #bbb;
+$stateNotPlanned: #cf4033;
+$stateDeprecated: #cf4033;
+$stateConsidering: #cf9733;
+$stateDeveloping: #c5cc32;
+$stateShipped: #81bc2e;*/
 
 /* Color wheel for #ed3c25 */
+/*$stateUnknown: #bbb;
+$stateNotPlanned: #ed3c25;
+$stateDeprecated: #ed3c25;
+$stateConsidering: #eda825;
+$stateDeveloping: #dce724;
+$stateShipped: #7ed321;*/
+
+/* github issue labels */
+
+/* github issue labels, light */
 
 .status.state-unknown {
 	background-color: #bbb;
-	border-color: #949494;
-	border-color: rgba(148, 148, 148, 0.5);
+	border-color: rgb(181, 181, 181);
 	opacity: 0.6;
 }
 .status.state-not-planned {
-	background-color: #ed3c25;
-	border-color: #B8230F;
-	border-color: rgba(184, 35, 15, 0.5);
+	background-color: #f7c6c7;
+	border-color: rgb(245, 188, 189);
 }
 .status.state-deprecated {
-	background-color: #ed3c25;
-	border-color: #B8230F;
-	border-color: rgba(184, 35, 15, 0.5);
+	background-color: #f7c6c7;
+	border-color: rgb(245, 188, 189);
 }
 .status.state-under-consideration {
-	background-color: #eda825;
-	border-color: #B87D0F;
-	border-color: rgba(184, 125, 15, 0.5);
+	background-color: #fad8c7;
+	border-color: rgb(249, 209, 189);
 }
 .status.state-in-development {
-	background-color: #dce724;
-	border-color: #A2AA13;
-	border-color: rgba(162, 170, 19, 0.5);
+	background-color: #fef2c0;
+	border-color: rgb(254, 239, 180);
 }
 .status.state-shipped {
-	background-color: #7ed321;
-	border-color: #569217;
-	border-color: rgba(86, 146, 23, 0.5);
-}
-.status-text, .status-version {
-	color: #fff;
-	text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
-	font-weight: 600;
-	text-transform: uppercase;
+	background-color: #bfe5bf;
+	border-color: rgb(183, 225, 183);
 }
 .status-text {
 	font-size: 0.72917em;
 	display: none;
 }
 .status-version {
+	color: #009800;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
 
-  #tabzilla a {
-    background-image: url('../media/img/tabzilla-static-high-res.png');
-    background-size: 147px 37px;
-  }
+	#tabzilla a {
+		background-image: url('images/tabzilla-static-high-res.png');
+		background-size: 147px 37px;
+	}
 }
 @media (min-width: 480px) {
 
-  .feature {
-    padding: 0.4375rem 0.875rem;
-  }
+	.feature {
+		padding: 0.4375rem 0.875rem;
+	}
 
-  .feature-meta {
-    display: block;
-  }
+	.feature-title {
+		font-size: 1.26rem;
+		font-weight: 300;
+	}
+
+	.feature-meta {
+		display: block;
+	}
 }
 @media (max-width: 480px) {
 
-  .feature:focus .feature-meta {
-    display: block;
-  }
+	.feature:focus .feature-meta {
+		display: block;
+	}
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
 
-  .icon-spec {
-    background-image: url(images/html5@2x.png);
-  }
+	.icon-spec {
+		background-image: url(images/html5@2x.png);
+	}
 
-  .icon-mdn {
-    background-image: url(images/mdn@2x.png);
-  }
+	.icon-mdn {
+		background-image: url(images/mdn@2x.png);
+	}
 
-  .icon-bugzilla {
-    background-image: url(images/bugzilla@2x.png);
-  }
+	.icon-bugzilla {
+		background-image: url(images/bugzilla@2x.png);
+	}
 
-  .icon-samples {
-    background-image: url(images/github@2x.png);
-  }
+	.icon-samples {
+		background-image: url(images/github@2x.png);
+	}
 }
 @media (min-width: 760px) {
 
-  .status {
-    width: 80px;
-    background-size: 32px;
-    background-position: 50% 1.54512rem;
-    border-top: none;
-  }
+	.status {
+		color: #fff;
+		font-weight: 600;
+		font-size: 0.875rem;
+		text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+		width: 5rem;
+		background-size: 32px;
+		background-position: 50% 1.54512rem;
+		border-top: none;
+	}
 
-  .status.state-firefox {
-    background-size: 48px;
-    width: 120px;
-    background-position: 50% 1.10762rem;
-  }
+	.status.state-firefox {
+		background-size: 48px;
+		width: 7.5rem;
+		background-position: 50% 1.25rem;
+	}
 
-  .status-text {
-    display: block;
-  }
+	.status.state-unknown {
+		background-color: #bbb;
+		border-color: rgb(181, 181, 181);
+	}
+
+	.status.state-not-planned {
+		background-color: #e11d21;
+		border-color: rgb(217, 28, 31);
+	}
+
+	.status.state-deprecated {
+		background-color: #e11d21;
+		border-color: rgb(217, 28, 31);
+	}
+
+	.status.state-under-consideration {
+		background-color: #eb6420;
+		border-color: rgb(235, 92, 20);
+	}
+
+	.status.state-in-development {
+		background-color: #fbca04;
+		border-color: rgb(241, 194, 4);
+	}
+
+	.status.state-shipped {
+		background-color: #009800;
+		border-color: rgb(0, 143, 0);
+	}
+
+	.status-text {
+		display: block;
+	}
+
+	.status-version {
+		color: inherit;
+	}
 }
 
 /*# sourceMappingURL=bundle.css.map */
