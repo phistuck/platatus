@@ -299,6 +299,8 @@ article {
 	height: 14px;
 	height: 0.875rem;
 	background-size: 0.875rem;
+	margin-right: 14px / 2;
+	margin-right: 0.875rem / 2;
 }
 .icon-spec {
 	background-image: url(images/html5.png);
