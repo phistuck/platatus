@@ -185,17 +185,6 @@ a:hover, a:focus, a:active {
 	color: rgb(0,150,221);
 	text-decoration: underline;
 }
-
-.row {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-}
 .row-inner {
 	min-width: 300px;
 	max-width: 1020px;
@@ -469,6 +458,17 @@ $stateShipped: #7ed321;*/
 	}
 }
 @media (min-width: 480px) {
+
+	.row {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
 
 	.feature {
 		padding: 0.4375rem 0.875rem;
