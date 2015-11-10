@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-10T18:38:24.012Z",
+  "created": "2015-11-10T20:06:23.540Z",
   "features": [
     {
       "summary": "\nThe App Manifest specification defines metadata for use by user agents.\n",
@@ -150,6 +150,30 @@
       "spec_status": "established-standard"
     },
     {
+      "summary": "\nEncode audio and video streams in the browser.\n",
+      "slug": "media_recorder",
+      "file": "media_recorder.md",
+      "title": "Media Recorder",
+      "category": "apps, multimedia",
+      "bugzilla": 803414,
+      "firefox_status": "shipped",
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder",
+      "spec_url": "https://w3c.github.io/mediacapture-record/MediaRecorder.html",
+      "chrome_ref": 5929649028726784,
+      "ie_ref": "MediaRecorder",
+      "bugzilla_status": "VERIFIED",
+      "bugzilla_resolved_count": 1,
+      "bugzilla_dependant_count": 2,
+      "firefox_version": 29,
+      "chrome_status": "in-development",
+      "chrome_url": "https://www.chromestatus.com/feature/5929649028726784",
+      "webkit_status": "unknown",
+      "webkit_url": "https://www.webkit.org/status.html",
+      "ie_status": "under-consideration",
+      "ie_url": "https://dev.modern.ie/platform/status/mediarecorder",
+      "spec_status": "working-draft-or-equivalent"
+    },
+    {
       "summary": "\nAn API that allows creating media streams via JavaScript and play them using &lt;audio&gt; and &lt;video&gt; elements.\n",
       "slug": "mse",
       "file": "mse.md",
@@ -289,7 +313,7 @@
       "ie_ref": "Service Worker",
       "bugzilla_status": "NEW",
       "bugzilla_resolved_count": 212,
-      "bugzilla_dependant_count": 233,
+      "bugzilla_dependant_count": 234,
       "firefox_version": 44,
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/6561526227927040",
