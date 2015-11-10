@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-10T16:58:20.230Z",
+  "created": "2015-11-10T18:14:53.641Z",
   "features": [
     {
       "summary": "\nThe App Manifest specification defines metadata for use by user agents.\n",
@@ -296,6 +296,31 @@
       "webkit_url": "https://www.webkit.org/status.html#specification-Streams",
       "ie_status": "shipped",
       "ie_url": "https://dev.modern.ie/platform/status/streamsapi",
+      "spec_status": "working-draft-or-equivalent"
+    },
+    {
+      "summary": "\nVibration API provides access to vibration hardware, allowing the web to provide physical feedback to the user by causing the device to shake.\n",
+      "slug": "vibration",
+      "file": "vibration.md",
+      "title": "Vibration API",
+      "category": "js, games",
+      "bugzilla": 679966,
+      "firefox_status": "shipped",
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Vibration_API",
+      "spec_url": "http://dev.w3.org/2009/dap/vibration/",
+      "caniuse_ref": "vibration",
+      "chrome_ref": 5698768766763008,
+      "ie_ref": "Vibration API",
+      "bugzilla_status": "RESOLVED",
+      "bugzilla_resolved_count": 8,
+      "bugzilla_dependant_count": 10,
+      "firefox_version": 11,
+      "chrome_status": "shipped",
+      "chrome_url": "https://www.chromestatus.com/feature/5698768766763008",
+      "webkit_status": "unknown",
+      "webkit_url": "https://www.webkit.org/status.html",
+      "ie_status": "under-consideration",
+      "ie_url": "https://dev.modern.ie/platform/status/vibrationapi",
       "spec_status": "working-draft-or-equivalent"
     },
     {
