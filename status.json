@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-11T18:35:44.479Z",
+  "created": "2015-11-11T19:59:22.034Z",
   "features": [
     {
       "summary": "\nA highly-optimizable subset of JavaScript.\n",
@@ -475,7 +475,7 @@
       "slug": "webaudio",
       "file": "webaudio.md",
       "title": "Web Audio API",
-      "category": "apps",
+      "category": "multimedia, apps",
       "bugzilla": 779297,
       "firefox_status": "shipped",
       "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API",
