@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-10T20:06:23.540Z",
+  "created": "2015-11-11T00:45:33.099Z",
   "features": [
     {
       "summary": "\nThe App Manifest specification defines metadata for use by user agents.\n",
@@ -47,6 +47,30 @@
       "webkit_url": "https://www.webkit.org/status.html#feature-ASM.js",
       "ie_status": "in-development",
       "ie_url": "https://dev.modern.ie/platform/status/asmjs"
+    },
+    {
+      "summary": "\nProvides access to device's physical orientation.\n",
+      "slug": "device_orientation",
+      "file": "device_orientation.md",
+      "title": "Device Orientation",
+      "category": "games, apps",
+      "firefox_status": "shipped",
+      "bugzilla": 615597,
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent",
+      "spec_url": "http://w3c.github.io/deviceorientation/spec-source-orientation.html",
+      "chrome_ref": 5874690627207168,
+      "ie_ref": "Device Orientation",
+      "bugzilla_status": "VERIFIED",
+      "bugzilla_resolved_count": 2,
+      "bugzilla_dependant_count": 3,
+      "firefox_version": 6,
+      "chrome_status": "shipped",
+      "chrome_url": "https://www.chromestatus.com/feature/5874690627207168",
+      "webkit_status": "unknown",
+      "webkit_url": "https://www.webkit.org/status.html",
+      "ie_status": "shipped",
+      "ie_url": "https://dev.modern.ie/platform/status/deviceorientation",
+      "spec_status": "working-draft-or-equivalent"
     },
     {
       "summary": "\nThe Fetch specification defines requests, responses, and the process that binds them; fetching.\n",
