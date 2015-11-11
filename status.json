@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-11T00:48:47.658Z",
+  "created": "2015-11-11T10:44:16.762Z",
   "features": [
     {
       "summary": "\nThe App Manifest specification defines metadata for use by user agents.\n",
@@ -47,6 +47,31 @@
       "webkit_url": "https://www.webkit.org/status.html#feature-ASM.js",
       "ie_status": "in-development",
       "ie_url": "https://dev.modern.ie/platform/status/asmjs"
+    },
+    {
+      "summary": "\nDefine a custom HTML tag and associate it with an ES6 class.\n",
+      "slug": "custom_elements",
+      "file": "custom_elements.md",
+      "title": "Custom Elements",
+      "category": "apps",
+      "bugzilla": 889230,
+      "firefox_status": "in-development",
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements",
+      "spec_url": "http://w3c.github.io/webcomponents/spec/custom/",
+      "spec_repo": "https://github.com/w3c/webcomponents",
+      "chrome_ref": 4642138092470272,
+      "ie_ref": "Custom Elements",
+      "webkit_ref": "Custom Elements",
+      "bugzilla_status": "UNCONFIRMED",
+      "bugzilla_resolved_count": 1,
+      "bugzilla_dependant_count": 2,
+      "chrome_status": "shipped",
+      "chrome_url": "https://www.chromestatus.com/feature/4642138092470272",
+      "webkit_status": "not-planned",
+      "webkit_url": "https://www.webkit.org/status.html#feature-Custom Elements",
+      "ie_status": "under-consideration",
+      "ie_url": "https://dev.modern.ie/platform/status/customelements",
+      "spec_status": "working-draft-or-equivalent"
     },
     {
       "summary": "\nProvides access to device's physical orientation.\n",
@@ -509,7 +534,9 @@
       "chrome_ref": 6612462929444864,
       "webkit_ref": "WebRTC",
       "ie_ref": "WebRTC – WebRTC v1.0 API",
-      "bugzilla_status": null,
+      "bugzilla_status": "RESOLVED",
+      "bugzilla_resolved_count": 29,
+      "bugzilla_dependant_count": 39,
       "firefox_version": 37,
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/6612462929444864",
