@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-11T00:45:33.099Z",
+  "created": "2015-11-11T00:48:47.658Z",
   "features": [
     {
       "summary": "\nThe App Manifest specification defines metadata for use by user agents.\n",
@@ -323,6 +323,31 @@
       "spec_status": "working-draft-or-equivalent"
     },
     {
+      "summary": "\nThe Screen.orientation property give the current orientation of the screen.\n",
+      "slug": "screen_orientation",
+      "file": "screen_orientation.md",
+      "title": "Screen Orientation API",
+      "category": "games, apps",
+      "firefox_status": "shipped",
+      "bugzilla": 673922,
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Screen/orientation",
+      "spec_url": "https://w3c.github.io/screen-orientation/",
+      "spec_repo": "https://github.com/w3c/screen-orientation",
+      "chrome_ref": 6191285283061760,
+      "ie_ref": "Screen Orientation API",
+      "bugzilla_status": "RESOLVED",
+      "bugzilla_resolved_count": 6,
+      "bugzilla_dependant_count": 6,
+      "firefox_version": 15,
+      "chrome_status": "shipped",
+      "chrome_url": "https://www.chromestatus.com/feature/6191285283061760",
+      "webkit_status": "unknown",
+      "webkit_url": "https://www.webkit.org/status.html",
+      "ie_status": "shipped",
+      "ie_url": "https://dev.modern.ie/platform/status/screenorientationapi",
+      "spec_status": "working-draft-or-equivalent"
+    },
+    {
       "summary": "\nEvent-driven scripts that can handle network requests and manage cached responses in the background.\n",
       "slug": "service-worker",
       "file": "service-worker.md",
@@ -484,9 +509,7 @@
       "chrome_ref": 6612462929444864,
       "webkit_ref": "WebRTC",
       "ie_ref": "WebRTC – WebRTC v1.0 API",
-      "bugzilla_status": "RESOLVED",
-      "bugzilla_resolved_count": 29,
-      "bugzilla_dependant_count": 39,
+      "bugzilla_status": null,
       "firefox_version": 37,
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/6612462929444864",
