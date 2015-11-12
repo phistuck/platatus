@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-11T19:59:22.034Z",
+  "created": "2015-11-12T00:57:30.855Z",
   "features": [
     {
       "summary": "\nA highly-optimizable subset of JavaScript.\n",
@@ -23,6 +23,30 @@
       "webkit_url": "https://www.webkit.org/status.html#feature-ASM.js",
       "ie_status": "in-development",
       "ie_url": "https://dev.modern.ie/platform/status/asmjs"
+    },
+    {
+      "summary": "\nThe <code>HTMLCanvasElement.captureStream()</code> API allows real-time video capture of the surface of the canvas.\n",
+      "slug": "canvas_media_capture",
+      "file": "canvas_media_capture.md",
+      "title": "Canvas Media Capture",
+      "category": "network, apps, games",
+      "bugzilla": 1032848,
+      "firefox_status": "in-development",
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/captureStream",
+      "spec_url": "https://w3c.github.io/mediacapture-fromelement/index.html#idl-def-CanvasCaptureMediaStream",
+      "spec_repo": "https://github.com/w3c/mediacapture-fromelement",
+      "chrome_ref": 4817998447640576,
+      "bugzilla_status": "RESOLVED",
+      "bugzilla_resolved_count": 4,
+      "bugzilla_dependant_count": 5,
+      "firefox_version": 43,
+      "chrome_status": "not-planned",
+      "chrome_url": "https://www.chromestatus.com/feature/4817998447640576",
+      "webkit_status": "unknown",
+      "webkit_url": "https://www.webkit.org/status.html",
+      "ie_status": "unknown",
+      "ie_url": "https://dev.modern.ie/platform/status/",
+      "spec_status": "working-draft-or-equivalent"
     },
     {
       "summary": "\nDefine a custom HTML tag and associate it with an ES6 class.\n",
@@ -386,7 +410,7 @@
       "chrome_ref": 6561526227927040,
       "ie_ref": "Service Worker",
       "bugzilla_status": "NEW",
-      "bugzilla_resolved_count": 213,
+      "bugzilla_resolved_count": 214,
       "bugzilla_dependant_count": 233,
       "firefox_version": 44,
       "chrome_status": "shipped",
