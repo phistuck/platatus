@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-12T20:17:00.676Z",
+  "created": "2015-11-13T00:40:00.324Z",
   "features": [
     {
       "summary": "\nA highly-optimizable subset of JavaScript.\n",
@@ -11,6 +11,7 @@
       "bugzilla": 868184,
       "mdn_url": "https://developer.mozilla.org/en-US/docs/Games/Tools/asm.js",
       "spec_url": "http://asmjs.org/spec/latest/",
+      "spec_status": "working-draft-or-equivalent",
       "webkit_ref": "ASM.js",
       "ie_ref": "ASM.js",
       "bugzilla_status": "VERIFIED",
@@ -196,6 +197,27 @@
       "ie_status": "under-consideration",
       "ie_url": "https://dev.modern.ie/platform/status/htmlimports",
       "spec_status": "working-draft-or-equivalent"
+    },
+    {
+      "summary": "\nThe HTML template element contains a fragment of inactive HTML used as a prototype for creating DOM (often used in Web Components).\n",
+      "slug": "html_templates",
+      "file": "html_templates.md",
+      "title": "HTML Templates",
+      "category": "apps",
+      "firefox_status": "shipped",
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template",
+      "spec_url": "https://html.spec.whatwg.org/multipage//scripting.html#the-template-element",
+      "chrome_ref": 5207287069147136,
+      "webkit_ref": "Web Components",
+      "ie_ref": "<template> Element",
+      "firefox_version": 22,
+      "chrome_status": "shipped",
+      "chrome_url": "https://www.chromestatus.com/feature/5207287069147136",
+      "webkit_status": "shipped",
+      "webkit_url": "https://www.webkit.org/status.html#specification-Web Components",
+      "ie_status": "in-development",
+      "ie_url": "https://dev.modern.ie/platform/status/templateelement",
+      "spec_status": "established-standard"
     },
     {
       "summary": "\nAn asynchronous client-side storage API offering fast access to large amounts of structured data\n",

@@ -141,14 +141,24 @@ a:hover, a:focus, a:active {
 	color: rgb(0,150,221);
 	text-decoration: underline;
 }
+
+.row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
 .row-inner {
 	min-width: 300px;
 	max-width: 1020px;
 }
 header {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	padding: 0 0 10px 14px;
 	padding: 0 0 0.625rem 0.875rem;
-	width: 1000px;
 }
 
 h1 {
@@ -313,6 +323,7 @@ article {
 	font-size: 0.72917em;
 	text-transform: uppercase;
 	border: 1px solid rgba(0, 0, 0, 0);
+	border-bottom: none;
 }
 /*&:first-child {
 		border-left: none;
@@ -345,68 +356,47 @@ article {
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
 	color: inherit;
-	height: 61.8%;
 }
 .status-inner:hover, .status-inner:focus, .status-inner:active {
 	text-decoration: none;
+	color: inherit;
 }
-
-/* Color wheel for #81bc2e */
-/*$stateUnknown: #bbb;
-$stateNotPlanned: #cf4033;
-$stateDeprecated: #cf4033;
-$stateConsidering: #cf9733;
-$stateDeveloping: #c5cc32;
-$stateShipped: #81bc2e;*/
-
-/* Color wheel for #ed3c25 */
-/*$stateUnknown: #bbb;
-$stateNotPlanned: #ed3c25;
-$stateDeprecated: #ed3c25;
-$stateConsidering: #eda825;
-$stateDeveloping: #dce724;
-$stateShipped: #7ed321;*/
-
-/* github issue labels */
-
-/* github issue labels, light */
 
 .status.state-unknown {
-	background-color: #bbb;
-	border-color: rgb(181, 181, 181);
-	opacity: 0.6;
+	background-color: #d1d2d3;
+	border-color: rgb(203, 204, 205);
 }
 .status.state-not-planned {
-	background-color: #f7c6c7;
-	border-color: rgb(245, 188, 189);
+	background-color: rgb(237, 138, 104);
+	border-color: rgb(236, 130, 95);
 }
 .status.state-deprecated {
-	background-color: #f7c6c7;
-	border-color: rgb(245, 188, 189);
+	background-color: rgb(237, 138, 104);
+	border-color: rgb(236, 130, 95);
 }
 .status.state-under-consideration {
-	background-color: #fad8c7;
-	border-color: rgb(249, 209, 189);
+	background-color: rgb(246, 176, 106);
+	border-color: rgb(246, 171, 96);
 }
 .status.state-in-development {
-	background-color: #fef2c0;
-	border-color: rgb(254, 239, 180);
+	background-color: rgb(255, 219, 77);
+	border-color: rgb(255, 217, 66);
 }
 .status.state-shipped {
-	background-color: #bfe5bf;
-	border-color: rgb(183, 225, 183);
+	background-color: rgb(156, 210, 131);
+	border-color: rgb(150, 208, 124);
 }
 .status-text {
 	font-size: 0.72917em;
 	display: none;
 }
 .status-version {
-	color: #009800;
+	color: #7dc14c;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
 
@@ -415,7 +405,7 @@ $stateShipped: #7ed321;*/
 		background-size: 147px 37px;
 	}
 }
-@media (min-width: 480px) {
+@media (min-width: 1000px) {
 
 	.row {
 		display: -webkit-box;
@@ -427,6 +417,8 @@ $stateShipped: #7ed321;*/
 		    -ms-flex-pack: center;
 		        justify-content: center;
 	}
+}
+@media (min-width: 480px) {
 
 	.feature {
 		padding: 0.4375rem 0.875rem;
@@ -485,33 +477,63 @@ $stateShipped: #7ed321;*/
 	}
 
 	.status.state-unknown {
-		background-color: #bbb;
-		border-color: rgb(181, 181, 181);
+		background-color: #d1d2d3;
+		border-color: rgb(203, 204, 205);
+	}
+
+	.status.state-unknown .status-inner {
+		background-image: -webkit-linear-gradient(bottom, rgba(209, 210, 211, 0.7), rgba(209, 210, 211, 0.5) 10%, rgba(209, 210, 211, 0) 25%);
+		background-image: linear-gradient(to top, rgba(209, 210, 211, 0.7), rgba(209, 210, 211, 0.5) 10%, rgba(209, 210, 211, 0) 25%);
 	}
 
 	.status.state-not-planned {
-		background-color: #e11d21;
-		border-color: rgb(217, 28, 31);
+		background-color: #f26c23;
+		border-color: rgb(242, 100, 24);
+	}
+
+	.status.state-not-planned .status-inner {
+		background-image: -webkit-linear-gradient(bottom, rgba(242, 108, 35, 0.7), rgba(242, 108, 35, 0.5) 10%, rgba(242, 108, 35, 0) 25%);
+		background-image: linear-gradient(to top, rgba(242, 108, 35, 0.7), rgba(242, 108, 35, 0.5) 10%, rgba(242, 108, 35, 0) 25%);
 	}
 
 	.status.state-deprecated {
-		background-color: #e11d21;
-		border-color: rgb(217, 28, 31);
+		background-color: #f26c23;
+		border-color: rgb(242, 100, 24);
+	}
+
+	.status.state-deprecated .status-inner {
+		background-image: -webkit-linear-gradient(bottom, rgba(242, 108, 35, 0.7), rgba(242, 108, 35, 0.5) 10%, rgba(242, 108, 35, 0) 25%);
+		background-image: linear-gradient(to top, rgba(242, 108, 35, 0.7), rgba(242, 108, 35, 0.5) 10%, rgba(242, 108, 35, 0) 25%);
 	}
 
 	.status.state-under-consideration {
-		background-color: #eb6420;
-		border-color: rgb(235, 92, 20);
+		background-color: #f89c24;
+		border-color: rgb(248, 152, 27);
+	}
+
+	.status.state-under-consideration .status-inner {
+		background-image: -webkit-linear-gradient(bottom, rgba(248, 156, 36, 0.7), rgba(248, 156, 36, 0.5) 10%, rgba(248, 156, 36, 0) 25%);
+		background-image: linear-gradient(to top, rgba(248, 156, 36, 0.7), rgba(248, 156, 36, 0.5) 10%, rgba(248, 156, 36, 0) 25%);
 	}
 
 	.status.state-in-development {
-		background-color: #fbca04;
-		border-color: rgb(241, 194, 4);
+		background-color: #ffda00;
+		border-color: rgb(245, 208, 0);
+	}
+
+	.status.state-in-development .status-inner {
+		background-image: -webkit-linear-gradient(bottom, rgba(255, 218, 0, 0.7), rgba(255, 218, 0, 0.5) 10%, rgba(255, 218, 0, 0) 25%);
+		background-image: linear-gradient(to top, rgba(255, 218, 0, 0.7), rgba(255, 218, 0, 0.5) 10%, rgba(255, 218, 0, 0) 25%);
 	}
 
 	.status.state-shipped {
-		background-color: #009800;
-		border-color: rgb(0, 143, 0);
+		background-color: #7dc14c;
+		border-color: rgb(120, 191, 69);
+	}
+
+	.status.state-shipped .status-inner {
+		background-image: -webkit-linear-gradient(bottom, rgba(125, 193, 76, 0.7), rgba(125, 193, 76, 0.5) 10%, rgba(125, 193, 76, 0) 25%);
+		background-image: linear-gradient(to top, rgba(125, 193, 76, 0.7), rgba(125, 193, 76, 0.5) 10%, rgba(125, 193, 76, 0) 25%);
 	}
 
 	.status-text {
