@@ -417,7 +417,7 @@ article {
 		font-size: 0.875rem;
 	}
 
-	.feature:hover .status:not(.state-firefox) {
+	.feature:hover .status:not(.state-firefox), .feature:focus .status:not(.state-firefox) {
 		width: 7.5rem;
 	}
 
@@ -485,7 +485,7 @@ article {
 		font-weight: 600;
 		font-size: 0.875rem;
 		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3), 0 0 1px rgba(0, 0, 0, 0.3);
-		width: 5rem;
+		width: 3.75rem;
 		-webkit-transition: width 0.2s ease-in-out;
 		transition: width 0.2s ease-in-out;
 		background-size: 32px;
@@ -573,7 +573,7 @@ article {
 		background-image: linear-gradient(to top, rgba(111, 190, 74, 0.7), rgba(111, 190, 74, 0.5) 10%, rgba(111, 190, 74, 0) 25%);
 	}
 
-	.feature:hover .status-text {
+	.feature:hover .status-text, .feature:focus .status-text {
 		display: block;
 	}
 
