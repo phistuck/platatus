@@ -130,6 +130,8 @@ body {
 	background-size: 100% 500px;
 	background-repeat: no-repeat;
 	background-position: top center;
+	color: #333;
+	-webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -182,7 +184,6 @@ h2 {
 
 article {
 	background-color: #fff;
-	color: #333;
 }
 
 #features {
@@ -233,12 +234,12 @@ article {
 	padding-bottom: 13px;
 	padding-bottom: 0.83333rem;
 	display: none;
+	color: #666;
 }
 .feature-summary {
 	margin: 0;
 	padding-bottom: 10px;
 	padding-bottom: 0.625rem;
-	color: #666;
 }
 .feature-links ul {
 	list-style: none;
@@ -251,7 +252,7 @@ article {
 	margin-right: 0.4375rem;
 }
 .feature-links a {
-	color: #b1b1ad;
+	color: rgb(0,150,221);
 }
 .feature-links a:hover, .feature-links a:focus, .feature-links a:active {
 	color: rgb(0,150,221);
@@ -325,12 +326,6 @@ article {
 	border: 1px solid rgba(0, 0, 0, 0);
 	border-bottom: none;
 }
-/*&:first-child {
-		border-left: none;
-	}
-	&:last-child {
-		border-right: none;
-	}*/
 .status.state-chrome {
 	background-image: url(https://raw.githubusercontent.com/alrra/browser-logos/master/chrome/chrome_64x64.png);
 }
@@ -396,7 +391,7 @@ article {
 	display: none;
 }
 .status-version {
-	color: #7dc14c;
+	color: #6fbe4a;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
 
@@ -417,6 +412,18 @@ article {
 		    -ms-flex-pack: center;
 		        justify-content: center;
 	}
+
+	.status {
+		font-size: 0.875rem;
+	}
+
+	.feature:hover .status:not(.state-firefox) {
+		width: 7.5rem;
+	}
+
+	.status-text {
+		font-size: 0.875rem;
+	}
 }
 @media (min-width: 480px) {
 
@@ -426,11 +433,25 @@ article {
 
 	.feature-title {
 		font-size: 1.26rem;
+		letter-spacing: -.035em;
 		font-weight: 300;
+	}
+
+	@media (min-width: 1400px) {
+
+		.feature-title {
+			font-size: 1.512rem;
+		}
 	}
 
 	.feature-meta {
 		display: block;
+	}
+}
+@media (min-width: 1400px) {
+
+	.feature-title {
+		font-size: 1.512rem;
 	}
 }
 @media (max-width: 480px) {
@@ -463,17 +484,33 @@ article {
 		color: #fff;
 		font-weight: 600;
 		font-size: 0.875rem;
-		text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3), 0 0 1px rgba(0, 0, 0, 0.3);
 		width: 5rem;
+		-webkit-transition: width 0.2s ease-in-out;
+		transition: width 0.2s ease-in-out;
 		background-size: 32px;
-		background-position: 50% 1.54512rem;
+		background-position: 50% 1.23609rem;
 		border-top: none;
+	}
+
+	@media (min-width: 1000px) {
+
+		.status {
+			font-size: 0.875rem;
+		}
 	}
 
 	.status.state-firefox {
 		background-size: 48px;
-		width: 7.5rem;
-		background-position: 50% 1.25rem;
+		width: 10rem;
+		background-position: 50% calc(1.25rem - 5px);
+	}
+
+	.status.state-firefox .status-text {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
 	}
 
 	.status.state-unknown {
@@ -487,56 +524,56 @@ article {
 	}
 
 	.status.state-not-planned {
-		background-color: #f26c23;
-		border-color: rgb(242, 100, 24);
+		background-color: #e55525;
+		border-color: rgb(228, 77, 27);
 	}
 
 	.status.state-not-planned .status-inner {
-		background-image: -webkit-linear-gradient(bottom, rgba(242, 108, 35, 0.7), rgba(242, 108, 35, 0.5) 10%, rgba(242, 108, 35, 0) 25%);
-		background-image: linear-gradient(to top, rgba(242, 108, 35, 0.7), rgba(242, 108, 35, 0.5) 10%, rgba(242, 108, 35, 0) 25%);
+		background-image: -webkit-linear-gradient(bottom, rgba(229, 85, 37, 0.7), rgba(229, 85, 37, 0.5) 10%, rgba(229, 85, 37, 0) 25%);
+		background-image: linear-gradient(to top, rgba(229, 85, 37, 0.7), rgba(229, 85, 37, 0.5) 10%, rgba(229, 85, 37, 0) 25%);
 	}
 
 	.status.state-deprecated {
-		background-color: #f26c23;
-		border-color: rgb(242, 100, 24);
+		background-color: #e55525;
+		border-color: rgb(228, 77, 27);
 	}
 
 	.status.state-deprecated .status-inner {
-		background-image: -webkit-linear-gradient(bottom, rgba(242, 108, 35, 0.7), rgba(242, 108, 35, 0.5) 10%, rgba(242, 108, 35, 0) 25%);
-		background-image: linear-gradient(to top, rgba(242, 108, 35, 0.7), rgba(242, 108, 35, 0.5) 10%, rgba(242, 108, 35, 0) 25%);
+		background-image: -webkit-linear-gradient(bottom, rgba(229, 85, 37, 0.7), rgba(229, 85, 37, 0.5) 10%, rgba(229, 85, 37, 0) 25%);
+		background-image: linear-gradient(to top, rgba(229, 85, 37, 0.7), rgba(229, 85, 37, 0.5) 10%, rgba(229, 85, 37, 0) 25%);
 	}
 
 	.status.state-under-consideration {
-		background-color: #f89c24;
-		border-color: rgb(248, 152, 27);
+		background-color: #f18a21;
+		border-color: rgb(240, 133, 25);
 	}
 
 	.status.state-under-consideration .status-inner {
-		background-image: -webkit-linear-gradient(bottom, rgba(248, 156, 36, 0.7), rgba(248, 156, 36, 0.5) 10%, rgba(248, 156, 36, 0) 25%);
-		background-image: linear-gradient(to top, rgba(248, 156, 36, 0.7), rgba(248, 156, 36, 0.5) 10%, rgba(248, 156, 36, 0) 25%);
+		background-image: -webkit-linear-gradient(bottom, rgba(241, 138, 33, 0.7), rgba(241, 138, 33, 0.5) 10%, rgba(241, 138, 33, 0) 25%);
+		background-image: linear-gradient(to top, rgba(241, 138, 33, 0.7), rgba(241, 138, 33, 0.5) 10%, rgba(241, 138, 33, 0) 25%);
 	}
 
 	.status.state-in-development {
-		background-color: #ffda00;
-		border-color: rgb(245, 208, 0);
+		background-color: #ffcd02;
+		border-color: rgb(245, 196, 0);
 	}
 
 	.status.state-in-development .status-inner {
-		background-image: -webkit-linear-gradient(bottom, rgba(255, 218, 0, 0.7), rgba(255, 218, 0, 0.5) 10%, rgba(255, 218, 0, 0) 25%);
-		background-image: linear-gradient(to top, rgba(255, 218, 0, 0.7), rgba(255, 218, 0, 0.5) 10%, rgba(255, 218, 0, 0) 25%);
+		background-image: -webkit-linear-gradient(bottom, rgba(255, 205, 2, 0.7), rgba(255, 205, 2, 0.5) 10%, rgba(255, 205, 2, 0) 25%);
+		background-image: linear-gradient(to top, rgba(255, 205, 2, 0.7), rgba(255, 205, 2, 0.5) 10%, rgba(255, 205, 2, 0) 25%);
 	}
 
 	.status.state-shipped {
-		background-color: #7dc14c;
-		border-color: rgb(120, 191, 69);
+		background-color: #6fbe4a;
+		border-color: rgb(106, 187, 68);
 	}
 
 	.status.state-shipped .status-inner {
-		background-image: -webkit-linear-gradient(bottom, rgba(125, 193, 76, 0.7), rgba(125, 193, 76, 0.5) 10%, rgba(125, 193, 76, 0) 25%);
-		background-image: linear-gradient(to top, rgba(125, 193, 76, 0.7), rgba(125, 193, 76, 0.5) 10%, rgba(125, 193, 76, 0) 25%);
+		background-image: -webkit-linear-gradient(bottom, rgba(111, 190, 74, 0.7), rgba(111, 190, 74, 0.5) 10%, rgba(111, 190, 74, 0) 25%);
+		background-image: linear-gradient(to top, rgba(111, 190, 74, 0.7), rgba(111, 190, 74, 0.5) 10%, rgba(111, 190, 74, 0) 25%);
 	}
 
-	.status-text {
+	.feature:hover .status-text {
 		display: block;
 	}
 
