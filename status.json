@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-17T06:11:33.213Z",
+  "created": "2015-11-17T13:22:56.904Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -481,7 +481,7 @@
       "chrome_ref": 4570991992766464,
       "bugzilla_status": "NEW",
       "bugzilla_resolved_count": 46,
-      "bugzilla_dependant_count": 79,
+      "bugzilla_dependant_count": 81,
       "firefox_version": 45,
       "chrome_status": "in-development",
       "chrome_url": "https://www.chromestatus.com/feature/4570991992766464",
@@ -608,6 +608,30 @@
       "ie_status": "shipped",
       "ie_url": "https://dev.modern.ie/platform/status/webaudioapi",
       "spec_status": "working-draft-or-equivalent"
+    },
+    {
+      "summary": "\nAn API for communicating with Bluetooth Low Energy devices as a GATT Client.\n",
+      "slug": "web_bluetooth",
+      "file": "web_bluetooth.md",
+      "title": "Web Bluetooth API",
+      "category": "apps",
+      "bugzilla": 1204396,
+      "firefox_status": "in-development",
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API",
+      "spec_url": "http://webbluetoothcg.github.io/web-bluetooth/",
+      "spec_repo": "https://github.com/WebBluetoothCG/web-bluetooth",
+      "chrome_ref": 5264933985976320,
+      "ie_ref": "Web Bluetooth",
+      "bugzilla_status": "NEW",
+      "bugzilla_resolved_count": 0,
+      "bugzilla_dependant_count": 1,
+      "chrome_status": "in-development",
+      "chrome_url": "https://www.chromestatus.com/feature/5264933985976320",
+      "webkit_status": "unknown",
+      "webkit_url": "https://www.webkit.org/status.html",
+      "ie_status": "under-consideration",
+      "ie_url": "https://dev.modern.ie/platform/status/webbluetooth",
+      "spec_status": "editors-draft"
     },
     {
       "summary": "\nAn API closely conforming to <a href=\"https://www.khronos.org/opengles/2_X/\">OpenGL ES 2.0</a> for rendering 3D and 2D graphics in a <code>&lt;canvas&gt;</code> element.\n",
