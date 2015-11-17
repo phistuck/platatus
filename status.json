@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-17T01:49:57.244Z",
+  "created": "2015-11-17T05:53:08.476Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -22,7 +22,7 @@
       "chrome_url": "https://www.chromestatus.com/features",
       "webkit_status": "in-development",
       "webkit_url": "https://www.webkit.org/status.html#feature-ASM.js",
-      "ie_status": "in-development",
+      "ie_status": "shipped",
       "ie_url": "https://dev.modern.ie/platform/status/asmjs"
     },
     {
@@ -215,7 +215,7 @@
       "chrome_url": "https://www.chromestatus.com/feature/5207287069147136",
       "webkit_status": "shipped",
       "webkit_url": "https://www.webkit.org/status.html#specification-Web Components",
-      "ie_status": "in-development",
+      "ie_status": "shipped",
       "ie_url": "https://dev.modern.ie/platform/status/templateelement",
       "spec_status": "established-standard"
     },
@@ -470,8 +470,8 @@
     },
     {
       "summary": "\nFine-grained borrowing and sharing for <code>ArrayBuffer</code> between workers.\n",
-      "slug": "wasmjs",
-      "file": "wasmjs.md",
+      "slug": "shared-array-buffer",
+      "file": "shared-array-buffer.md",
       "title": "Shared Array Buffers",
       "category": "apps, games",
       "bugzilla": 1054841,
