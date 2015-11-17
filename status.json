@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-17T20:05:34.600Z",
+  "created": "2015-11-17T20:06:00.175Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -470,18 +470,18 @@
     },
     {
       "summary": "\nFine-grained borrowing and sharing for <code>ArrayBuffer</code> between workers.\n",
-      "slug": "shared-array-buffer",
-      "file": "shared-array-buffer.md",
+      "slug": "shared_array_buffer",
+      "file": "shared_array_buffer.md",
       "title": "Shared Array Buffers",
       "category": "apps, games",
-      "bugzilla": 1054841,
+      "bugzilla": 1225406,
       "firefox_status": "in-development",
       "spec_url": "https://github.com/lars-t-hansen/ecmascript_sharedmem",
       "spec_repo": "https://github.com/lars-t-hansen/ecmascript_sharedmem",
       "chrome_ref": 4570991992766464,
       "bugzilla_status": "NEW",
-      "bugzilla_resolved_count": 46,
-      "bugzilla_dependant_count": 81,
+      "bugzilla_resolved_count": 0,
+      "bugzilla_dependant_count": 1,
       "firefox_version": 45,
       "chrome_status": "in-development",
       "chrome_url": "https://www.chromestatus.com/feature/4570991992766464",
