@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-17T20:12:00.830Z",
+  "created": "2015-11-17T20:33:33.718Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -467,6 +467,31 @@
       "ie_status": "under-consideration",
       "ie_url": "https://dev.modern.ie/platform/status/serviceworker",
       "spec_status": "working-draft-or-equivalent"
+    },
+    {
+      "summary": "\nProvides encapsulation for  JavaScript, CSS, and templating in a <a href=\"https://developer.mozilla.org/en-US/docs/Web/Web_Components\">Web Component</a>.\n",
+      "slug": "shadow-dom",
+      "file": "shadow-dom.md",
+      "title": "Shadow DOM",
+      "category": "apps",
+      "bugzilla": 1205323,
+      "firefox_status": "in-development",
+      "mdn_url": "https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM",
+      "spec_url": "http://w3c.github.io/webcomponents/spec/shadow/",
+      "spec_repo": "https://github.com/w3c/webcomponents",
+      "chrome_ref": 4667415417847808,
+      "ie_ref": "Shadow DOM",
+      "webkit_ref": "Shadow DOM",
+      "bugzilla_status": "ASSIGNED",
+      "bugzilla_resolved_count": 0,
+      "bugzilla_dependant_count": 1,
+      "chrome_status": "in-development",
+      "chrome_url": "https://www.chromestatus.com/feature/4667415417847808",
+      "webkit_status": "in-development",
+      "webkit_url": "https://www.webkit.org/status.html#feature-Shadow DOM",
+      "ie_status": "under-consideration",
+      "ie_url": "https://dev.modern.ie/platform/status/shadowdom",
+      "spec_status": "editors-draft"
     },
     {
       "summary": "\nFine-grained borrowing and sharing for <code>ArrayBuffer</code> between workers.\n",
