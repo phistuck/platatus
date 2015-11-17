@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-17T20:06:00.175Z",
+  "created": "2015-11-17T20:12:00.830Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -51,8 +51,8 @@
     },
     {
       "summary": "\nDefine a custom HTML tag and associate it with an ES6 class.\n",
-      "slug": "custom_elements",
-      "file": "custom_elements.md",
+      "slug": "custom-elements",
+      "file": "custom-elements.md",
       "title": "Custom Elements",
       "category": "apps",
       "bugzilla": 889230,
@@ -76,8 +76,8 @@
     },
     {
       "summary": "\nProvides access to device's physical orientation.\n",
-      "slug": "device_orientation",
-      "file": "device_orientation.md",
+      "slug": "device-orientation",
+      "file": "device-orientation.md",
       "title": "Device Orientation",
       "category": "games, apps",
       "firefox_status": "shipped",
@@ -175,8 +175,8 @@
     },
     {
       "summary": "\nInclude reusable HTML documents in other HTML documents\n",
-      "slug": "html_imports",
-      "file": "html_imports.md",
+      "slug": "html-imports",
+      "file": "html-imports.md",
       "title": "HTML Imports",
       "category": "apps",
       "bugzilla": 877072,
@@ -200,8 +200,8 @@
     },
     {
       "summary": "\nDeclared fragments of markup which are parsed as HTML, implicitly inactive until instantiated later on at runtime.\n",
-      "slug": "html_templates",
-      "file": "html_templates.md",
+      "slug": "html-templates",
+      "file": "html-templates.md",
       "title": "HTML Templates",
       "category": "apps",
       "firefox_status": "shipped",
@@ -247,8 +247,8 @@
     },
     {
       "summary": "\nEncode audio and video streams in the browser.\n",
-      "slug": "media_recorder",
-      "file": "media_recorder.md",
+      "slug": "media-recorder",
+      "file": "media-recorder.md",
       "title": "Media Recorder",
       "category": "apps, multimedia",
       "bugzilla": 803414,
@@ -296,8 +296,8 @@
     },
     {
       "summary": "\nProgrammatically determine the visibility state of a page, and to be notified if the visibility state changes.\n",
-      "slug": "page_visibility",
-      "file": "page_visibility.md",
+      "slug": "page-visibility",
+      "file": "page-visibility.md",
       "title": "Page Visibility API",
       "category": "games, apps",
       "firefox_status": "shipped",
@@ -420,8 +420,8 @@
     },
     {
       "summary": "\nAllows reading to the current screen orientations, getting events on orientation changes and locking orientation state.\n",
-      "slug": "screen_orientation",
-      "file": "screen_orientation.md",
+      "slug": "screen-orientation",
+      "file": "screen-orientation.md",
       "title": "Screen Orientation API",
       "category": "games, apps",
       "firefox_status": "shipped",
@@ -611,8 +611,8 @@
     },
     {
       "summary": "\nAn API for communicating with Bluetooth Low Energy devices as a GATT Client.\n",
-      "slug": "web_bluetooth",
-      "file": "web_bluetooth.md",
+      "slug": "web-bluetooth",
+      "file": "web-bluetooth.md",
       "title": "Web Bluetooth API",
       "category": "apps",
       "bugzilla": 1204396,
@@ -635,8 +635,8 @@
     },
     {
       "summary": "\nAn API closely conforming to <a href=\"https://www.khronos.org/opengles/2_X/\">OpenGL ES 2.0</a> for rendering 3D and 2D graphics in a <code>&lt;canvas&gt;</code> element.\n",
-      "slug": "webgl_1",
-      "file": "webgl_1.md",
+      "slug": "webgl-1",
+      "file": "webgl-1.md",
       "title": "WebGL 1.0",
       "category": "graphics, games",
       "firefox_status": "shipped",
@@ -660,8 +660,8 @@
     },
     {
       "summary": "\nAn update to WebGL, based on <a href=\"https://www.khronos.org/opengles/3_X/\">OpenGL ES 3.0</a>.\n",
-      "slug": "webgl_2",
-      "file": "webgl_2.md",
+      "slug": "webgl-2",
+      "file": "webgl-2.md",
       "title": "WebGL 2.0",
       "category": "graphics, games",
       "firefox_status": "in-development",
