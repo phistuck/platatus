@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-17T13:22:56.904Z",
+  "created": "2015-11-17T20:05:34.600Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -27,8 +27,8 @@
     },
     {
       "summary": "\nAllows real-time video capture of the surface of the canvas.\n",
-      "slug": "canvas_media_capture",
-      "file": "canvas_media_capture.md",
+      "slug": "canvas-media-capture",
+      "file": "canvas-media-capture.md",
       "title": "Canvas Media Capture",
       "category": "network, apps, games",
       "bugzilla": 1032848,
