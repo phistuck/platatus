@@ -393,6 +393,12 @@ article {
 .status-version {
 	color: #6fbe4a;
 }
+
+body > footer {
+  text-align: center;
+  color: white;
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
 
 	#tabzilla a {
@@ -400,6 +406,7 @@ article {
 		background-size: 147px 37px;
 	}
 }
+
 @media (min-width: 1000px) {
 
 	.row {
@@ -425,6 +432,7 @@ article {
 		font-size: 0.875rem;
 	}
 }
+
 @media (min-width: 480px) {
 
 	.feature {
@@ -448,18 +456,21 @@ article {
 		display: block;
 	}
 }
+
 @media (min-width: 1400px) {
 
 	.feature-title {
 		font-size: 1.512rem;
 	}
 }
+
 @media (max-width: 480px) {
 
 	.feature:focus .feature-meta {
 		display: block;
 	}
 }
+
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
 
 	.icon-spec {
@@ -478,6 +489,7 @@ article {
 		background-image: url(images/github@2x.png);
 	}
 }
+
 @media (min-width: 760px) {
 
 	.status {
