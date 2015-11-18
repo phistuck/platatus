@@ -3,3 +3,10 @@ if ('serviceWorker' in navigator) {
     console.log('offline-worker.js registered');
   });
 }
+
+window.ga = window.ga || function ga() {
+  (ga.q = ga.q || []).push(arguments);
+};
+const ga = window.ga;
+ga.l = Date.now();
+ga('create', 'UA-XXXXX-Y', 'auto');
