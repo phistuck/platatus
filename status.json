@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-17T20:49:53.816Z",
+  "created": "2015-11-18T04:36:46.636Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -479,7 +479,7 @@
       "chrome_ref": 6561526227927040,
       "ie_ref": "Service Worker",
       "bugzilla_status": "NEW",
-      "bugzilla_resolved_count": 217,
+      "bugzilla_resolved_count": 218,
       "bugzilla_dependant_count": 234,
       "firefox_version": 44,
       "chrome_status": "shipped",
