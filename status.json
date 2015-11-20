@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-20T00:19:48.398Z",
+  "created": "2015-11-20T18:00:09.537Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -481,7 +481,7 @@
       "ie_ref": "Service Worker",
       "bugzilla_status": "NEW",
       "bugzilla_resolved_count": 218,
-      "bugzilla_dependant_count": 230,
+      "bugzilla_dependant_count": 231,
       "firefox_version": 44,
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/6561526227927040",
