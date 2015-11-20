@@ -55,12 +55,12 @@ h1 {
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Open Sans';
   src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-LightItalic-webfont.woff') format('woff');
   font-weight: 300;
   font-style: italic;
-}
+}*/
 
 @font-face {
   font-family: 'Open Sans';
@@ -69,19 +69,19 @@ h1 {
   font-style: normal;
 }
 
-@font-face {
+/*@font-face {
   font-family: 'Open Sans';
   src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Bold-webfont.woff') format('woff');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
-}
+}*/
 
-@font-face {
+/*@font-face {
   font-family: 'Open Sans';
   src: url('https://mozorg.cdn.mozilla.net/media/fonts/OpenSans-Italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: italic;
-}
+}*/
 
 * {
 	box-sizing: border-box;
@@ -226,6 +226,7 @@ article {
 	line-height: 2.5rem;
 	padding-right: 14px;
 	padding-right: 0.875rem;
+	font-weight: 600;
 }
 
 .feature-meta {
@@ -320,7 +321,7 @@ article {
 	background-repeat: no-repeat;
 	background-size: 16px;
 	color: #484848;
-	font-weight: 700;
+	font-weight: 600;
 	font-size: 0.72917em;
 	text-transform: uppercase;
 	border: 1px solid rgba(0, 0, 0, 0);
