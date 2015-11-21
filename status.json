@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-20T18:00:09.537Z",
+  "created": "2015-11-21T12:38:57.181Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -480,8 +480,8 @@
       "chrome_ref": 6561526227927040,
       "ie_ref": "Service Worker",
       "bugzilla_status": "NEW",
-      "bugzilla_resolved_count": 218,
-      "bugzilla_dependant_count": 231,
+      "bugzilla_resolved_count": 219,
+      "bugzilla_dependant_count": 234,
       "firefox_version": 44,
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/6561526227927040",
@@ -589,26 +589,6 @@
       "spec_status": "working-draft-or-equivalent"
     },
     {
-      "summary": "\n<em>WebAssembly</em> is a low-level, portable, size- and load-time-efficient binary code format; designed to serve as a compilation target for the web.\n",
-      "slug": "wasmjs",
-      "file": "wasmjs.md",
-      "title": "wasm.js",
-      "category": "apps, games",
-      "firefox_status": "in-development",
-      "bugzilla": 1188259,
-      "spec_url": "https://github.com/WebAssembly/spec",
-      "spec_status": "working-draft-or-equivalent",
-      "chrome_status": "in-development",
-      "ie_status": "in-development",
-      "bugzilla_status": "NEW",
-      "bugzilla_resolved_count": 0,
-      "bugzilla_dependant_count": 2,
-      "chrome_url": "https://www.chromestatus.com/features",
-      "webkit_status": "unknown",
-      "webkit_url": "https://www.webkit.org/status.html",
-      "ie_url": "https://dev.modern.ie/platform/status/"
-    },
-    {
       "summary": "\nJSON-based manifest that provides developers with a centralized place to put metadata associated with a web application.\n",
       "slug": "app-manifest",
       "file": "app-manifest.md",
@@ -680,6 +660,26 @@
       "ie_status": "under-consideration",
       "ie_url": "https://dev.modern.ie/platform/status/webbluetooth",
       "spec_status": "editors-draft"
+    },
+    {
+      "summary": "\n<em>WebAssembly</em> is a low-level, portable, size- and load-time-efficient binary code format; designed to serve as a compilation target for the web.\n",
+      "slug": "web-assembly",
+      "file": "web-assembly.md",
+      "title": "WebAssembly (WASM)",
+      "category": "apps, games",
+      "firefox_status": "in-development",
+      "bugzilla": 1188259,
+      "spec_url": "https://github.com/WebAssembly/spec",
+      "spec_status": "working-draft-or-equivalent",
+      "chrome_status": "in-development",
+      "ie_status": "in-development",
+      "bugzilla_status": "NEW",
+      "bugzilla_resolved_count": 0,
+      "bugzilla_dependant_count": 2,
+      "chrome_url": "https://www.chromestatus.com/features",
+      "webkit_status": "unknown",
+      "webkit_url": "https://www.webkit.org/status.html",
+      "ie_url": "https://dev.modern.ie/platform/status/"
     },
     {
       "summary": "\nAn API closely conforming to <a href=\"https://www.khronos.org/opengles/2_X/\">OpenGL ES 2.0</a> for rendering 3D and 2D graphics in a <code>&lt;canvas&gt;</code> element.\n",
