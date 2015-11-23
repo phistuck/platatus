@@ -1,5 +1,5 @@
 {
-  "created": "2015-11-21T12:38:57.181Z",
+  "created": "2015-11-23T14:03:19.995Z",
   "features": [
     {
       "summary": "\nStrict &amp; highly optimizable subset of JavaScript that can be used as low-level compile target.\n",
@@ -307,8 +307,8 @@
       "webkit_status": "shipped",
       "ie_ref": "Media Source Extensions",
       "bugzilla_status": "NEW",
-      "bugzilla_resolved_count": 530,
-      "bugzilla_dependant_count": 614,
+      "bugzilla_resolved_count": 531,
+      "bugzilla_dependant_count": 615,
       "firefox_version": 42,
       "chrome_status": "shipped",
       "chrome_url": "https://www.chromestatus.com/feature/4563797888991232",
@@ -480,7 +480,7 @@
       "chrome_ref": 6561526227927040,
       "ie_ref": "Service Worker",
       "bugzilla_status": "NEW",
-      "bugzilla_resolved_count": 219,
+      "bugzilla_resolved_count": 220,
       "bugzilla_dependant_count": 234,
       "firefox_version": 44,
       "chrome_status": "shipped",
