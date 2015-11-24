@@ -37,13 +37,13 @@
 
     // This is the unique name for the cache controlled by this version of the worker.
     get CACHE_NAME() {
-      return this.CACHE_PREFIX + 'e32517c149d500d9b70f7e8d444e21dce7f9c3d0';
+      return this.CACHE_PREFIX + 'ff06383ece0cda5ed23a940c45fc8b1431479177';
     },
 
     // This is a list of resources that will be cached.
     RESOURCES: [
       './', // cache always the current root to make the default page available
-      './index.html', // ba8e5dec1df9805be165cc84a87871d50aaa2262
+      './index.html', // 2212eac63a4f979162251b37afa5ab3a267c1001
       './bundle.js', // ff027cd680c008da02bb2655ca03815e103afd72
       './bundle.css', // 620b82d9485ba8995cd7c0c409720022d6a706a1
       './images/bugzilla.png', // 7269f42f62bfefd436523107e9d793febb847a2d
